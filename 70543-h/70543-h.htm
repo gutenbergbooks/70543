@@ -1,0 +1,3433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      Color | Project Gutenberg
+    </title>
+    <link rel="icon" href="images/cover.jpg" type="image/x-cover">
+    <style>
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+    h1,h2 {
+    text-align: center;
+    clear: both;
+}
+
+    h3 {
+    text-align: center;
+    clear: both;
+    font-size: 150%;
+}
+
+p {
+    margin-top: .51em;
+    text-align: justify;
+    margin-bottom: .49em;
+}
+
+hr {
+    width: 33%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 33.5%;
+    margin-right: 33.5%;
+    clear: both;
+}
+
+hr.tiny   {width: 17%; margin-left: 41.5%; margin-right: 41.5%;}
+hr.chap {width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
+@media print { hr.chap {display: none; visibility: hidden;} }
+
+div.chapter {page-break-before: always;}
+h2.nobreak  {page-break-before: avoid;}
+h3.nobreak  {page-break-before: avoid;}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tdr      {text-align: right;}
+
+.pagenum {
+    position: absolute;
+    left: 92%;
+    font-size: smaller;
+    text-align: right;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-indent: 0;
+}
+
+.blockquot {
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+}
+
+.x-ebookmaker .blockquot {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+.center   {text-align: center;}
+
+.ph1 {text-align: center; font-size: large; font-weight: bold;}
+
+div.titlepage {text-align: center; page-break-before: always; page-break-after: always;}
+div.titlepage p {text-align: center; font-weight: bold; line-height: 1.5; margin-top: 2em;}
+
+.xxxlarge {font-size: 350%;}
+.xxlarge {font-size: 175%;}
+.xlarge {font-size: 150%;}
+.large {font-size: 125%;}
+
+.x-ebookmaker .hide {display: none; visibility: hidden;}
+
+.figcenter {
+    margin: auto;
+    text-align: center;
+    page-break-inside: avoid;
+    max-width: 100%;
+}
+
+.footnote         {margin-left: 20%; margin-right: 10%; font-size: 0.9em;}
+
+.footnote .label  {position: absolute; right: 75%; text-align: right;}
+
+.fnanchor {
+    vertical-align: super;
+    font-size: .8em;
+    text-decoration:
+    none;
+}
+
+p.drop-cap {
+  text-indent: -3.4em;
+  margin-left: 1em;
+  margin-bottom: 0em;
+}
+
+p.drop-cap2 {
+  text-indent: -0.25em;
+  margin-left: -3em;
+  margin-bottom: 0em;
+}
+
+p.drop-cap3 {
+  text-indent: 0em;
+  margin-left: -3em;
+  margin-bottom: 0em;
+}
+
+p.drop-cap4 {
+  text-indent: 0em;
+  margin-left: 0em;
+  margin-bottom: 0em;
+  margin-top: -1.1em;
+}
+
+p.drop-cap:first-letter
+{
+  float: left;
+  margin: 0em 0em 0em -0.5em;
+  font-size: 250%;
+  line-height:0.85em;
+  text-indent: 0em;
+}
+
+p.drop-cap2:first-letter
+{
+  float: left;
+  margin: 0em 0em 0em -0.25em;
+  font-size: 250%;
+  line-height:0.85em;
+  text-indent: 0em;
+}
+p.drop-cap3:first-letter
+{
+  float: left;
+  margin: 0em 0em 0em -0.25em;
+  font-size: 250%;
+  line-height:0.85em;
+  text-indent: 0em;
+}
+p.drop-cap4:first-letter
+{
+  float: left;
+  margin: 0em 0em 0em 0em;
+  font-size: 250%;
+  line-height:0.85em;
+  text-indent: 0em;
+}
+.x-ebookmaker p.drop-cap, .x-ebookmaker p.drop-cap2, .x-ebookmaker p.drop-cap3  {
+  text-indent: -2.5em; margin-left: 0em;
+}
+
+.x-ebookmaker p.drop-cap4 {
+  text-indent: -2.5em; margin-left: 2.5em;
+}
+
+.x-ebookmaker p.drop-cap:first-letter, .x-ebookmaker p.drop-cap2:first-letter, .x-ebookmaker p.drop-cap3:first-letter, .x-ebookmaker p.drop-cap4:first-letter
+{
+  float: none;
+  margin-left: 0;
+  font-size: 100%;
+}
+
+.poetry-container  {text-align: center;}
+.poetry {display: inline-block; text-align: left;}
+.poetry .verse  {text-indent: -2.5em; padding-left: 3em;}
+.poetry .stanza {margin: 1em auto;}
+.poetry .indent  {text-indent: 1.5em;}
+.poetry .indent3  {text-indent: 3.1em;}
+.poetry .dcindent  {text-indent: 0.2em;}
+.poetry .dcindent2  {text-indent: 0.25em;}
+.poetry .dcindent3  {text-indent: 0.25em;}
+@media print { .poetry {display: block;} }
+.x-ebookmaker .poetry {display: block; margin-left: 2em;}
+.x-ebookmaker .poetry .dcindent  {text-indent: 1.5em;}
+.x-ebookmaker .poetry .dcindent2  {text-indent: 0.6em;}
+.x-ebookmaker .poetry .dcindent3  {text-indent: 3em;}
+.transnote {background-color: #E6E6FA;
+    color: black;
+     font-size:smaller;
+     margin-left: 17.5%;
+     margin-right: 17.5%;
+     padding: 1em;
+     margin-bottom: 1em;
+     font-family:sans-serif, serif; }
+
+</style>
+</head>
+<body>
+<p style='text-align:center; font-size:1.2em; font-weight:bold'>The Project Gutenberg eBook of Color, by Countee Cullen</p>
+<div style='display:block; margin:1em 0'>
+This eBook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this eBook or online
+at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+are not located in the United States, you will have to check the laws of the
+country where you are located before using this eBook.
+</div>
+
+<p style='display:block; margin-top:1em; margin-bottom:1em; margin-left:2em; text-indent:-2em'>Title: Color</p>
+<p style='display:block; margin-top:1em; margin-bottom:0; margin-left:2em; text-indent:-2em'>Author: Countee Cullen</p>
+<p style='display:block; text-indent:0; margin:1em 0'>Release Date: April 14, 2023 [eBook #70543]</p>
+<p style='display:block; text-indent:0; margin:1em 0'>Language: English</p>
+  <p style='display:block; margin-top:1em; margin-bottom:0; margin-left:2em; text-indent:-2em; text-align:left'>Produced by: Tim Lindell, David E. Brown, and the Online Distributed Proofreading Team at https://www.pgdp.net (This file was produced from images generously made available by The Internet Archive/American Libraries.)</p>
+<div style='margin-top:2em; margin-bottom:4em'>*** START OF THE PROJECT GUTENBERG EBOOK COLOR ***</div>
+
+<div class="figcenter hide"><img src="images/coversmall.jpg" width="450" alt=""></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h1><i>Color</i></h1>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<div class="figcenter"><img src="images/i_title.jpg" alt=""></div>
+</div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="titlepage">
+<p><span class="xxxlarge">COLOR</span></p>
+
+<p>
+<span class="xlarge"><i>By</i></span><br>
+
+<span class="xxlarge">Countee Cullen</span></p>
+
+<div class="figcenter"><img src="images/i_titlelogo.jpg" alt=""></div>
+
+<p><span class="large">Harper &amp; Brothers, Publishers<br>
+New York and London<br>
+mcmxxv</span></p>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p class="ph1">COLOR</p>
+
+<hr class="tiny">
+<p class="center">Copyright, 1925, by Harper &amp; Brothers<br>
+Printed in the United States of America</p>
+<hr class="tiny">
+</div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p class="ph1">To my Mother and Father<br>
+
+This First Book</p>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h2 class="nobreak"><i>Acknowledgments</i></h2>
+</div>
+
+<div class="blockquot">
+<p>For permission to reprint certain of these
+poems thanks is hereby given to the following
+publications:</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<p><i>The American Mercury</i><br>
+<i>The Bookman</i><br>
+<i>The Century</i><br>
+<i>The Crisis</i><br>
+<i>The Conning Tower: New York World</i><br>
+<i>Folio</i><br>
+<i>Harper’s Magazine</i><br>
+<i>Les Continents</i><br>
+<i>The Messenger</i><br>
+<i>The Nation</i><br>
+<i>Opportunity</i><br>
+<i>Palms</i><br>
+<i>Poetry: A Magazine of Verse</i><br>
+<i>The Southwestern Christian Advocate</i><br>
+<i>The Survey Graphic</i><br>
+<i>The World Tomorrow</i><br>
+<i>Vanity Fair</i></p>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_ix">[ix]</span>
+
+<h2 class="nobreak"><i>Contents</i></h2>
+</div>
+
+<table>
+
+<tr><td><i>TO YOU WHO READ MY BOOK</i></td><td class="tdr"><a href="#Page_xiii">           xiii</a></td></tr>
+
+<tr><th colspan="2">COLOR</th></tr>
+
+<tr><td>YET DO I MARVEL</td><td class="tdr"><a href="#Page_3">         3</a></td></tr>
+
+<tr><td>A SONG OF PRAISE</td><td class="tdr"><a href="#Page_4">          4</a></td></tr>
+
+<tr><td>BROWN BOY TO BROWN GIRL</td><td class="tdr"><a href="#Page_5">          5</a></td></tr>
+
+<tr><td>A BROWN GIRL DEAD</td><td class="tdr"><a href="#Page_6">          6</a></td></tr>
+
+<tr><td>TO A BROWN GIRL</td><td class="tdr"><a href="#Page_7">          7</a></td></tr>
+
+<tr><td>TO A BROWN BOY</td><td class="tdr"><a href="#Page_8">          8</a></td></tr>
+
+<tr><td>BLACK MAGDALENS</td><td class="tdr"><a href="#Page_9">          9</a></td></tr>
+
+<tr><td>ATLANTIC CITY WAITER</td><td class="tdr"><a href="#Page_10">          10</a></td></tr>
+
+<tr><td>NEAR WHITE</td><td class="tdr"><a href="#Page_11">          11</a></td></tr>
+
+<tr><td>TABLEAU</td><td class="tdr"><a href="#Page_12">          12</a></td></tr>
+
+<tr><td>HARLEM WINE</td><td class="tdr"><a href="#Page_13">          13</a></td></tr>
+
+<tr><td>SIMON THE CYRENIAN SPEAKS</td><td class="tdr"><a href="#Page_14">          14</a></td></tr>
+
+<tr><td>INCIDENT</td><td class="tdr"><a href="#Page_15">          15</a></td></tr>
+
+<tr><td>TWO WHO CROSSED A LINE (SHE CROSSES)</td><td class="tdr"><a href="#Page_16">          16</a></td></tr>
+
+<tr><td>TWO WHO CROSSED A LINE (HE CROSSES)</td><td class="tdr"><a href="#Page_17">          17</a></td></tr>
+
+<tr><td>SATURDAY’S CHILD</td><td class="tdr"><a href="#Page_18">          18</a></td></tr>
+
+<tr><td>THE DANCE OF LOVE</td><td class="tdr"><a href="#Page_19">          19</a></td></tr>
+
+<tr><td>PAGAN PRAYER</td><td class="tdr"><a href="#Page_20">          20</a></td></tr>
+
+<tr><td>WISDOM COMETH WITH THE YEARS</td><td class="tdr"><a href="#Page_22">          22</a></td></tr>
+
+<tr><td>TO MY FAIRER BRETHREN</td><td class="tdr"><a href="#Page_23">          23</a></td></tr>
+
+<tr><td>FRUIT OF THE FLOWER</td><td class="tdr"><a href="#Page_24">          24</a></td></tr>
+
+<tr><td>THE SHROUD OF COLOR</td><td class="tdr"><a href="#Page_26">          26</a></td></tr>
+
+<tr><td>HERITAGE</td><td class="tdr"><a href="#Page_36">          36</a></td></tr>
+
+<tr><th colspan="2">EPITAPHS<span class="pagenum" id="Page_x">[x]</span></th></tr>
+
+<tr><td>FOR A POET</td><td class="tdr"><a href="#Page_45">          45</a></td></tr>
+
+<tr><td>FOR MY GRANDMOTHER</td><td class="tdr"><a href="#Page_46">          46</a></td></tr>
+
+<tr><td>FOR A CYNIC</td><td class="tdr"><a href="#Page_47">          47</a></td></tr>
+
+<tr><td>FOR A SINGER</td><td class="tdr"><a href="#Page_48">          48</a></td></tr>
+
+<tr><td>FOR A VIRGIN</td><td class="tdr"><a href="#Page_49">          49</a></td></tr>
+
+<tr><td>FOR A LADY I KNOW</td><td class="tdr"><a href="#Page_50">          50</a></td></tr>
+
+<tr><td>FOR A LOVELY LADY</td><td class="tdr"><a href="#Page_51">          51</a></td></tr>
+
+<tr><td>FOR AN ATHEIST</td><td class="tdr"><a href="#Page_52">          52</a></td></tr>
+
+<tr><td>FOR AN EVOLUTIONIST AND HIS OPPONENT &#160; &#160; </td><td class="tdr"><a href="#Page_53">          53</a></td></tr>
+
+<tr><td>FOR AN ANARCHIST</td><td class="tdr"><a href="#Page_54">          54</a></td></tr>
+
+<tr><td>FOR A MAGICIAN </td><td class="tdr"><a href="#Page_55">         55</a></td></tr>
+
+<tr><td>FOR A PESSIMIST</td><td class="tdr"><a href="#Page_56">          56</a></td></tr>
+
+<tr><td>FOR A MOUTHY WOMAN</td><td class="tdr"><a href="#Page_57">          57</a></td></tr>
+
+<tr><td>FOR A PHILOSOPHER</td><td class="tdr"><a href="#Page_58">          58</a></td></tr>
+
+<tr><td>FOR AN UNSUCCESSFUL SINNER </td><td class="tdr"><a href="#Page_59">         59</a></td></tr>
+
+<tr><td>FOR A FOOL</td><td class="tdr"><a href="#Page_60">          60</a></td></tr>
+
+<tr><td>FOR ONE WHO GAYLY SOWED HIS OATS</td><td class="tdr"><a href="#Page_61">          61</a></td></tr>
+
+<tr><td>FOR A SKEPTIC</td><td class="tdr"><a href="#Page_62">          62</a></td></tr>
+
+<tr><td>FOR A FATALIST </td><td class="tdr"><a href="#Page_63">         63</a></td></tr>
+
+<tr><td>FOR DAUGHTERS OF MAGDALEN </td><td class="tdr"><a href="#Page_64">         64</a></td></tr>
+
+<tr><td>FOR A WANTON </td><td class="tdr"><a href="#Page_65">         65</a></td></tr>
+
+<tr><td>FOR A PREACHER </td><td class="tdr"><a href="#Page_66">         66</a></td></tr>
+
+<tr><td>FOR ONE WHO DIED SINGING OF DEATH</td><td class="tdr"><a href="#Page_67">          67</a></td></tr>
+
+<tr><td>FOR JOHN KEATS, APOSTLE OF BEAUTY </td><td class="tdr"><a href="#Page_68">         68</a></td></tr>
+
+<tr><td>FOR HAZEL HALL, AMERICAN POET</td><td class="tdr"><a href="#Page_69">          69</a></td></tr>
+
+<tr><td>FOR PAUL LAWRENCE DUNBAR</td><td class="tdr"><a href="#Page_70">          70</a></td></tr>
+
+<tr><td>FOR JOSEPH CONRAD</td><td class="tdr"><a href="#Page_71">          71</a></td></tr>
+
+<tr><td>FOR MYSELF</td><td class="tdr"><a href="#Page_72">          72</a></td></tr>
+
+<tr><td>ALL THE DEAD</td><td class="tdr"><a href="#Page_73">          73</a></td></tr>
+
+<tr><th colspan="2">FOR LOVE’S SAKE<span class="pagenum" id="Page_xi">[xi]</span></th></tr>
+
+<tr><td>OH, FOR A LITTLE WHILE BE KIND </td><td class="tdr"><a href="#Page_77">         77</a></td></tr>
+
+<tr><td>IF YOU SHOULD GO</td><td class="tdr"><a href="#Page_78">          78</a></td></tr>
+
+<tr><td>TO ONE WHO SAID ME NAY</td><td class="tdr"><a href="#Page_79">          79</a></td></tr>
+
+<tr><td>ADVICE TO YOUTH</td><td class="tdr"><a href="#Page_80">          80</a></td></tr>
+
+<tr><td>CAPRICE</td><td class="tdr"><a href="#Page_81">          81</a></td></tr>
+
+<tr><td>SACRAMENT</td><td class="tdr"><a href="#Page_82">          82</a></td></tr>
+
+<tr><td>BREAD AND WINE</td><td class="tdr"><a href="#Page_83">          83</a></td></tr>
+
+<tr><td>SPRING REMINISCENCE</td><td class="tdr"><a href="#Page_84">          84</a></td></tr>
+
+<tr><th colspan="2">VARIA</th></tr>
+
+<tr><td>SUICIDE CHANT </td><td class="tdr"><a href="#Page_87">         87</a></td></tr>
+
+<tr><td>SHE OF THE DANCING FEET SINGS</td><td class="tdr"><a href="#Page_89">          89</a></td></tr>
+
+<tr><td>JUDAS ISCARIOT</td><td class="tdr"><a href="#Page_90">          90</a></td></tr>
+
+<tr><td>THE WISE</td><td class="tdr"><a href="#Page_95">          95</a></td></tr>
+
+<tr><td>MARY, MOTHER OF CHRIST </td><td class="tdr"><a href="#Page_96">         96</a></td></tr>
+
+<tr><td>DIALOGUE </td><td class="tdr"><a href="#Page_97">         97</a></td></tr>
+
+<tr><td>IN MEMORY OF COL. CHARLES YOUNG</td><td class="tdr"><a href="#Page_99">          99</a></td></tr>
+
+<tr><td>TO MY FRIENDS</td><td class="tdr"><a href="#Page_100">          100</a></td></tr>
+
+<tr><td>GODS</td><td class="tdr"><a href="#Page_101">          101</a></td></tr>
+
+<tr><td>TO JOHN KEATS, POET. AT SPRINGTIME</td><td class="tdr"><a href="#Page_102">          102</a></td></tr>
+
+<tr><td>ON GOING</td><td class="tdr"><a href="#Page_105">          105</a></td></tr>
+
+<tr><td>HARSH WORLD THAT LASHEST ME</td><td class="tdr"><a href="#Page_106">          106</a></td></tr>
+
+<tr><td>REQUIESCAM </td><td class="tdr"><a href="#Page_108">         108</a></td></tr>
+</table>
+
+<p><span class="pagenum" id="Page_xii">[xii]</span></p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_xiii">[xiii]</span>
+
+<h2 class="nobreak"><i>To You Who Read
+My Book</i></h2>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">SOON every sprinter,</p></div>
+<div class="dcindent">However fleet,</div>
+<div class="verse">Comes to a winter</div>
+<div class="indent">Of sure defeat:</div>
+<div class="verse">Though he may race</div>
+<div class="indent">Like the hunted doe,</div>
+<div class="verse">Time has a pace</div>
+<div class="indent">To lay him low.</div>
+</div>
+<div class="stanza">
+<div class="verse">Soon we who sing,</div>
+<div class="indent">However high,</div>
+<div class="verse">Must face the Thing</div>
+<div class="indent">We cannot fly.</div>
+<div class="verse">Yea, though we fling</div>
+<div class="indent">Our notes to the sun,</div>
+<div class="verse">Time will outsing</div>
+<div class="indent">Us every one.</div>
+</div>
+<div class="stanza">
+<div class="verse">All things must change</div>
+<div class="indent">As the wind is blown;</div>
+<div class="verse">Time will estrange</div>
+<div class="indent">The flesh from the bone.</div><span class="pagenum" id="Page_xiv">[xiv]</span>
+<div class="verse">The dream shall elude</div>
+<div class="indent">The dreamer’s clasp,</div>
+<div class="verse">And only its hood</div>
+<div class="indent">Shall comfort his grasp.</div>
+</div>
+<div class="stanza">
+<div class="verse">A little while,</div>
+<div class="indent">Too brief at most,</div>
+<div class="verse">And even my smile</div>
+<div class="indent">Will be a ghost.</div>
+<div class="verse">A little space,</div>
+<div class="indent">A Finger’s crook,</div>
+<div class="verse">And who shall trace</div>
+<div class="indent">The path I took?</div>
+</div>
+<div class="stanza">
+<div class="verse">Who shall declare</div>
+<div class="indent">My whereabouts;</div>
+<div class="verse">Say if in the air</div>
+<div class="indent">My being shouts</div>
+<div class="verse">Along light ways,</div>
+<div class="indent">Or if in the sea,</div>
+<div class="verse">Or deep earth stays</div>
+<div class="indent">The germ of me?</div>
+</div>
+<div class="stanza">
+<div class="verse">Ah, none knows, none,</div>
+<div class="indent">Save (but too well)</div>
+<div class="verse">The Cryptic One</div>
+<div class="indent">Who will not tell.</div>
+</div>
+<div class="stanza"><span class="pagenum" id="Page_xv">[xv]</span>
+<div class="verse">This is my hour</div>
+<div class="indent">To wax and climb,</div>
+<div class="verse">Flaunt a red flower</div>
+<div class="indent">In the face of time.</div>
+<div class="verse">And only an hour</div>
+<div class="indent">Time gives, then snap</div>
+<div class="verse">Goes the flower,</div>
+<div class="indent">And dried is the sap.</div>
+</div>
+<div class="stanza">
+<div class="verse">Juice of the first</div>
+<div class="indent">Grapes of my vine,</div>
+<div class="verse">I proffer your thirst</div>
+<div class="indent">My own heart’s wine.</div>
+<div class="verse">Here of my growing</div>
+<div class="indent">A red rose sways,</div>
+<div class="verse">Seed of my sowing,</div>
+<div class="indent">And work of my days.</div>
+</div>
+<div class="stanza">
+<div class="verse">(I run, but time’s</div>
+<div class="indent">Abreast with me;</div>
+<div class="verse">I sing, but he climbs</div>
+<div class="indent">With my highest C.)</div>
+</div>
+<div class="stanza">
+<div class="verse">Drink while my blood</div>
+<div class="indent">Colors the wine,</div>
+<div class="verse">Reach while the bud</div>
+<div class="indent">Is still on the vine....</div>
+</div>
+<div class="stanza"><span class="pagenum" id="Page_xvi">[xvi]</span>
+<div class="verse">Then ...</div>
+<div class="indent">When the hawks of death</div>
+<div class="verse">Tear at my throat</div>
+<div class="indent">Till song and breath</div>
+<div class="verse">Ebb note by note,</div>
+<div class="indent">Turn to this book</div>
+<div class="verse">Of the mellow word</div>
+<div class="indent">For a singing look</div>
+<div class="verse">At the stricken bird.</div>
+</div>
+<div class="stanza">
+<div class="indent">Say, “This is the way</div>
+<div class="verse">He chirped and sung,</div>
+<div class="indent">In the sweet heyday</div>
+<div class="verse">When his heart was young.</div>
+<div class="indent">Though his throat is bare,</div>
+<div class="verse">By death defiled,</div>
+<div class="indent">Song labored there</div>
+<div class="verse">And bore a child.”</div>
+</div>
+<div class="stanza">
+<div class="verse">When the dreadful Ax</div>
+<div class="indent">Rives me apart,</div>
+<div class="verse">When the sharp wedge cracks</div>
+<div class="indent">My arid heart,</div>
+<div class="verse">Turn to this book</div>
+<div class="indent">Of the singing me</div>
+<div class="verse">For a springtime look</div>
+<div class="indent">At the wintry tree.</div>
+</div>
+<div class="stanza"><span class="pagenum" id="Page_xvii">[xvii]</span>
+<div class="verse">Say, “Thus it was weighed</div>
+<div class="indent">With flower and fruit,</div>
+<div class="verse">Ere the Ax was laid</div>
+<div class="indent">Unto its root.</div>
+<div class="verse">Though the blows fall free</div>
+<div class="indent">On a gnarled trunk now,</div>
+<div class="verse">Once he was a tree</div>
+<div class="indent">With a blossomy bough.”</div>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_1">[1]</span>
+
+<h2 class="nobreak"><i>Color</i></h2>
+</div>
+
+<p><span class="pagenum" id="Page_2">[2]</span></p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_3">[3]</span>
+<h3 class="nobreak"><i>Yet Do I Marvel</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap">I DOUBT not God is good, well-meaning, kind,</p></div>
+<div class="verse"> And did He stoop to quibble could tell why</div>
+<div class="verse">The little buried mole continues blind,</div>
+<div class="verse">Why flesh that mirrors Him must some day die,</div>
+<div class="verse">Make plain the reason tortured Tantalus</div>
+<div class="verse">Is baited by the fickle fruit, declare</div>
+<div class="verse">If merely brute caprice dooms Sisyphus</div>
+<div class="verse">To struggle up a never-ending stair.</div>
+<div class="verse">Inscrutable His ways are, and immune</div>
+<div class="verse">To catechism by a mind too strewn</div>
+<div class="verse">With petty cares to slightly understand</div>
+<div class="verse">What awful brain compels His awful hand.</div>
+<div class="verse">Yet do I marvel at this curious thing:</div>
+<div class="verse">To make a poet black, and bid him sing!</div>
+</div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_4">[4]</span>
+
+<h3 class="nobreak"><i>A Song of Praise</i></h3>
+</div>
+
+<p class="center">(<i>For one who praised his lady’s being fair.</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">YOU have not heard my love’s dark throat,</p></div>
+<div class="dcindent">Slow-fluting like a reed,</div>
+<div class="verse">Release the perfect golden note</div>
+<div class="indent">She caged there for my need.</div>
+</div>
+<div class="stanza">
+<div class="verse">Her walk is like the replica</div>
+<div class="indent">Of some barbaric dance</div>
+<div class="verse">Wherein the soul of Africa</div>
+<div class="indent">Is winged with arrogance.</div>
+</div>
+<div class="stanza">
+<div class="verse">And yet so light she steps across</div>
+<div class="indent">The ways her sure feet pass,</div>
+<div class="verse">She does not dent the smoothest moss</div>
+<div class="indent">Or bend the thinnest grass.</div>
+</div>
+<div class="stanza">
+<div class="verse">My love is dark as yours is fair,</div>
+<div class="indent">Yet lovelier I hold her</div>
+<div class="verse">Than listless maids with pallid hair,</div>
+<div class="indent">And blood that’s thin and colder.</div>
+</div>
+<div class="stanza">
+<div class="verse">You-proud-and-to-be-pitied one,</div>
+<div class="indent">Gaze on her and despair;</div>
+<div class="verse">Then seal your lips until the sun</div>
+<div class="indent">Discovers one as fair.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_5">[5]</span></p>
+
+<h3 class="nobreak"><i>Brown Boy to Brown Girl</i></h3>
+</div>
+
+<p class="center">(<i>Remembrance on a hill</i>) (<i>For Yolande</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap2">“AS surely as I hold your hand in mine,</p></div>
+<div class="dcindent2">As surely as your crinkled hair belies</div>
+<div class="verse">The enamoured sun pretending that he dies</div>
+<div class="verse">While still he loiters in its glossy shine,</div>
+<div class="verse">As surely as I break the slender line</div>
+<div class="verse">That spider linked us with, in no least wise</div>
+<div class="verse">Am I uncertain that these alien skies</div>
+<div class="verse">Do not our whole life measure and confine.</div>
+<div class="verse">No less, once in a land of scarlet suns</div>
+<div class="verse">And brooding winds, before the hurricane</div>
+<div class="verse">Bore down upon us, long before this pain,</div>
+<div class="verse">We found a place where quiet water runs;</div>
+<div class="verse">I held your hand this way upon a hill,</div>
+<div class="verse">And felt my heart forebear, my pulse grow still.”</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_6">[6]</span>
+
+<h3 class="nobreak"><i>A Brown Girl Dead</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">WITH two white roses on her breasts,</p></div>
+<div class="dcindent">White candles at head and feet,</div>
+<div class="verse">Dark Madonna of the grave she rests;</div>
+<div class="indent">Lord Death has found her sweet.</div>
+</div>
+<div class="stanza">
+<div class="verse">Her mother pawned her wedding ring</div>
+<div class="indent">To lay her out in white;</div>
+<div class="verse">She’d be so proud she’d dance and sing</div>
+<div class="indent">To see herself tonight.</div>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_7">[7]</span>
+
+<h3 class="nobreak"><i>To a Brown Girl</i></h3>
+</div>
+
+<p class="center">(<i>For Roberta</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">WHAT if his glance is bold and free,</p></div>
+<div class="dcindent">His mouth the lash of whips?</div>
+<div class="verse">So should the eyes of lovers be,</div>
+<div class="indent">And so a lover’s lips.</div>
+</div>
+<div class="stanza">
+<div class="verse">What if no puritanic strain</div>
+<div class="indent">Confines him to the nice?</div>
+<div class="verse">He will not pass this way again,</div>
+<div class="indent">Nor hunger for you twice.</div>
+</div>
+<div class="stanza">
+<div class="verse">Since in the end consort together</div>
+<div class="indent">Magdalen and Mary,</div>
+<div class="verse">Youth is the time for careless weather:</div>
+<div class="indent">Later, lass, be wary.</div>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_8">[8]</span>
+
+<h3 class="nobreak"><i>To a Brown Boy</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">THAT brown girl’s swagger gives a twitch</p></div>
+<div class="dcindent">To beauty like a queen;</div>
+<div class="verse">Lad, never dam your body’s itch</div>
+<div class="indent">When loveliness is seen.</div>
+</div>
+<div class="stanza">
+<div class="verse">For there is ample room for bliss</div>
+<div class="indent">In pride in clean, brown limbs,</div>
+<div class="verse">And lips know better how to kiss</div>
+<div class="indent">Than how to raise white hymns.</div>
+</div>
+<div class="stanza">
+<div class="verse">And when your body’s death gives birth</div>
+<div class="indent">To soil for spring to crown,</div>
+<div class="verse">Men will not ask if that rare earth</div>
+<div class="indent">Was white flesh once, or brown.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_9">[9]</span></p>
+
+<h3 class="nobreak" id="Black_Magdalens"><i>Black Magdalens</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">THESE have no Christ to spit and stoop</p></div>
+<div class="dcindent">To write upon the sand,</div>
+<div class="verse">Inviting him that has not sinned</div>
+<div class="indent">To raise the first rude hand.</div>
+</div>
+<div class="stanza">
+<div class="verse">And if he came they could not buy</div>
+<div class="indent">Rich ointment for his feet,</div>
+<div class="verse">The body’s sale scarce yields enough</div>
+<div class="indent">To let the body eat.</div>
+</div>
+<div class="stanza">
+<div class="verse">The chaste clean ladies pass them by</div>
+<div class="indent">And draw their skirts aside,</div>
+<div class="verse">But Magdalens have a ready laugh;</div>
+<div class="indent">They wrap their wounds in pride.</div>
+</div>
+<div class="stanza">
+<div class="verse">They fare full ill since Christ forsook</div>
+<div class="indent">The cross to mount a throne,</div>
+<div class="verse">And Virtue still is stooping down</div>
+<div class="indent">To cast the first hard stone.</div>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_10">[10]</span>
+
+<h3 class="nobreak"><i>Atlantic City Waiter</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">WITH subtle poise he grips his tray</p></div>
+<div class="dcindent">Of delicate things to eat;</div>
+<div class="verse">Choice viands to their mouths half way,</div>
+<div class="indent">The ladies watch his feet</div>
+</div>
+<div class="stanza">
+<div class="verse">Go carving dexterous avenues</div>
+<div class="indent">Through sly intricacies;</div>
+<div class="verse">Ten thousand years on jungle clues</div>
+<div class="indent">Alone shaped feet like these.</div>
+</div>
+<div class="stanza">
+<div class="verse">For him to be humble who is proud</div>
+<div class="indent">Needs colder artifice;</div>
+<div class="verse">Though half his pride is disavowed,</div>
+<div class="indent">In vain the sacrifice.</div>
+</div>
+<div class="stanza">
+<div class="verse">Sheer through his acquiescent mask</div>
+<div class="indent">Of bland gentility,</div>
+<div class="verse">The jungle flames like a copper cask</div>
+<div class="indent">Set where the sun strikes free.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_11">[11]</span>
+
+<h3 class="nobreak"><i>Near White</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap2">AMBIGUOUS of race they stand,</p></div>
+<div class="dcindent">By one disowned, scorned of another,</div>
+<div class="verse">Not knowing where to stretch a hand,</div>
+<div class="indent">And cry, “My sister” or “My brother.”</div>
+</div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_12">[12]</span>
+
+<h3 class="nobreak"><i>Tableau</i></h3>
+</div>
+
+<p class="center"><i>For Donald Duff</i></p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap2">LOCKED arm in arm they cross the way,</p></div>
+<div class="dcindent">The black boy and the white,</div>
+<div class="verse">The golden splendor of the day,</div>
+<div class="indent">The sable pride of night.</div>
+</div>
+<div class="stanza">
+<div class="verse">From lowered blinds the dark folk stare,</div>
+<div class="indent">And here the fair folk talk,</div>
+<div class="verse">Indignant that these two should dare</div>
+<div class="indent">In unison to walk.</div>
+</div>
+<div class="stanza">
+<div class="verse">Oblivious to look and word</div>
+<div class="indent">They pass, and see no wonder</div>
+<div class="verse">That lightning brilliant as a sword</div>
+<div class="indent">Should blaze the path of thunder.</div>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_13">[13]</span>
+
+<h3 class="nobreak"><i>Harlem Wine</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">THIS is not water running here,</p></div>
+<div class="dcindent">These thick rebellious streams</div>
+<div class="verse">That hurtle flesh and bone past fear</div>
+<div class="indent">Down alleyways of dreams.</div>
+</div>
+<div class="stanza">
+<div class="verse">This is a wine that must flow on</div>
+<div class="indent">Not caring how nor where,</div>
+<div class="verse">So it has ways to flow upon</div>
+<div class="indent">Where song is in the air.</div>
+</div>
+<div class="stanza">
+<div class="verse">So it can woo an artful flute</div>
+<div class="indent">With loose, elastic lips,</div>
+<div class="verse">Its measurement of joy compute</div>
+<div class="indent">With blithe, ecstatic hips.</div>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_14">[14]</span>
+
+<h3 class="nobreak"><i>Simon the Cyrenian Speaks</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">HE never spoke a word to me,</p></div>
+<div class="dcindent">And yet He called my name;</div>
+<div class="verse">He never gave a sign to me,</div>
+<div class="indent">And yet I knew and came.</div>
+</div>
+<div class="stanza">
+<div class="verse">At first I said, “I will not bear</div>
+<div class="indent">His cross upon my back;</div>
+<div class="verse">He only seeks to place it there</div>
+<div class="indent">Because my skin is black.”</div>
+</div>
+<div class="stanza">
+<div class="verse">But He was dying for a dream,</div>
+<div class="indent">And He was very meek,</div>
+<div class="verse">And in His eyes there shone a gleam</div>
+<div class="indent">Men journey far to seek.</div>
+</div>
+<div class="stanza">
+<div class="verse">It was Himself my pity bought;</div>
+<div class="indent">I did for Christ alone</div>
+<div class="verse">What all of Rome could not have wrought</div>
+<div class="indent">With bruise of lash or stone.</div>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_15">[15]</span>
+
+<h3 class="nobreak"><i>Incident</i></h3>
+</div>
+
+<p class="center">(<i>For Eric Walrond</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">ONCE riding in old Baltimore,</p></div>
+<div class="dcindent">Heart-filled, head-filled with glee,</div>
+<div class="verse">I saw a Baltimorean</div>
+<div class="indent">Keep looking straight at me.</div>
+</div>
+<div class="stanza">
+<div class="verse">Now I was eight and very small,</div>
+<div class="indent">And he was no whit bigger,</div>
+<div class="verse">And so I smiled, but he poked out</div>
+<div class="indent">His tongue, and called me, “Nigger.”</div>
+</div>
+<div class="stanza">
+<div class="verse">I saw the whole of Baltimore</div>
+<div class="indent">From May until December;</div>
+<div class="verse">Of all the things that happened there</div>
+<div class="indent">That’s all that I remember.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_16">[16]</span>
+
+<h3 class="nobreak"><i>Two Who Crossed a Line</i></h3>
+</div>
+
+<p class="center">(<i>She Crosses</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">FROM where she stood the air she craved</p></div>
+<div class="dcindent">Smote with the smell of pine;</div>
+<div class="verse">It was too much to bear; she braved</div>
+<div class="indent">Her gods and crossed the line.</div>
+</div>
+<div class="stanza">
+<div class="verse">And we were hurt to see her go,</div>
+<div class="indent">With her fair face and hair,</div>
+<div class="verse">And veins too thin and blue to show</div>
+<div class="indent">What mingled blood flowed there.</div>
+</div>
+<div class="stanza">
+<div class="verse">We envied her a while, who still</div>
+<div class="indent">Pursued the hated track;</div>
+<div class="verse">Then we forgot her name, until</div>
+<div class="indent">One day her shade came back.</div>
+</div>
+<div class="stanza">
+<div class="verse">Calm as a wave without a crest,</div>
+<div class="indent">Sorrow-proud and sorrow-wise,</div>
+<div class="verse">With trouble sucking at her breast,</div>
+<div class="indent">With tear-disdainful eyes,</div>
+</div>
+<div class="stanza">
+<div class="verse">She slipped into her ancient place,</div>
+<div class="indent">And, no word asked, gave none;</div>
+<div class="verse">Only the silence in her face</div>
+<div class="indent">Said seats were dear in the sun.</div>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_17">[17]</span>
+
+<h3 class="nobreak"><i>Two Who Crossed a Line</i></h3>
+</div>
+
+<p class="center">(<i>He Crosses</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">HE rode across like a cavalier,</p></div>
+<div class="dcindent">Spurs clicking hard and loud;</div>
+<div class="verse">And where he tarried dropped his tear</div>
+<div class="indent">On heads he left low-bowed.</div>
+</div>
+<div class="stanza">
+<div class="verse">But, “Even Stephen,” he cried, and struck</div>
+<div class="indent">His steed an urgent blow;</div>
+<div class="verse">He swore by youth he was a buck</div>
+<div class="indent">With savage oats to sow.</div>
+</div>
+<div class="stanza">
+<div class="verse">To even up some standing scores,</div>
+<div class="indent">From every flower bed</div>
+<div class="verse">He passed, he plucked by threes and fours</div>
+<div class="indent">Till wheels whirled in his head.</div>
+</div>
+<div class="stanza">
+<div class="verse">But long before the drug could tell,</div>
+<div class="indent">He took his anodyne;</div>
+<div class="verse">With scornful grace, he bowed farewell</div>
+<div class="indent">And retraversed the line.</div>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_18">[18]</span>
+
+<h3 class="nobreak"><i>Saturday’s Child</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">SOME are teethed on a silver spoon,</p></div>
+<div class="dcindent">With the stars strung for a rattle;</div>
+<div class="verse">I cut my teeth as the black raccoon—</div>
+<div class="indent">For implements of battle.</div>
+</div>
+<div class="stanza">
+<div class="verse">Some are swaddled in silk and down,</div>
+<div class="indent">And heralded by a star;</div>
+<div class="verse">They swathed my limbs in a sackcloth gown</div>
+<div class="indent">On a night that was black as tar.</div>
+</div>
+<div class="stanza">
+<div class="verse">For some, godfather and goddame</div>
+<div class="indent">The opulent fairies be;</div>
+<div class="verse">Dame Poverty gave me my name,</div>
+<div class="indent">And Pain godfathered me.</div>
+</div>
+<div class="stanza">
+<div class="verse">For I was born on Saturday—</div>
+<div class="indent">“Bad time for planting a seed,”</div>
+<div class="verse">Was all my father had to say,</div>
+<div class="indent">And, “One mouth more to feed.”</div>
+</div>
+<div class="stanza">
+<div class="verse">Death cut the strings that gave me life,</div>
+<div class="indent">And handed me to Sorrow,</div>
+<div class="verse">The only kind of middle wife</div>
+<div class="indent">My folks could beg or borrow.</div>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_19">[19]</span>
+
+<h3 class="nobreak"><i>The Dance of Love</i></h3>
+</div>
+
+<p class="center">(<i>After reading René Maran’s “Batouala”</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap2">ALL night we danced upon our windy hill,</p></div>
+<div class="dcindent2">Your dress a cloud of tangled midnight hair,</div>
+<div class="verse">And love was much too much for me to wear</div>
+<div class="verse">My leaves; the killer roared above his kill,</div>
+<div class="verse">But you danced on, and when some star would spill</div>
+<div class="verse">Its red and white upon you whirling there,</div>
+<div class="verse">I sensed a hidden beauty in the air;</div>
+<div class="verse">Though you danced on, my heart and I stood still.</div>
+</div>
+<div class="stanza">
+<div class="verse">But suddenly a bit of morning crept</div>
+<div class="verse">Along your trembling sides of ebony;</div>
+<div class="verse">I saw the tears your tired limbs had wept,</div>
+<div class="verse">And how your breasts heaved high, how languidly</div>
+<div class="verse">Your dark arms moved; I drew you close to me;</div>
+<div class="verse">We flung ourselves upon our hill and slept.</div>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_20">[20]</span>
+
+<h3 class="nobreak"><i>Pagan Prayer</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">NOT for myself I make this prayer,</p></div>
+<div class="dcindent">But for this race of mine</div>
+<div class="verse">That stretches forth from shadowed places</div>
+<div class="indent">Dark hands for bread and wine.</div>
+</div>
+<div class="stanza">
+<div class="verse">For me, my heart is pagan mad,</div>
+<div class="indent">My feet are never still,</div>
+<div class="verse">But give them hearths to keep them warm</div>
+<div class="indent">In homes high on a hill.</div>
+</div>
+<div class="stanza">
+<div class="verse">For me, my faith lies fallowing,</div>
+<div class="indent">I bow not till I see,</div>
+<div class="verse">But these are humble and believe;</div>
+<div class="indent">Bless their credulity.</div>
+</div>
+<div class="stanza">
+<div class="verse">For me, I pay my debts in kind,</div>
+<div class="indent">And see no better way,</div>
+<div class="verse">Bless these who turn the other cheek</div>
+<div class="indent">For love of you, and pray.</div>
+</div>
+<div class="stanza">
+<div class="verse">Our Father, God, our Brother, Christ—</div>
+<div class="indent">So are we taught to pray;</div>
+<div class="verse">Their kinship seems a little thing</div>
+<div class="indent">Who sorrow all the day.</div>
+</div>
+<div class="stanza"><span class="pagenum" id="Page_21">[21]</span>
+<div class="verse">Our Father, God; our Brother, Christ,</div>
+<div class="indent">Or are we bastard kin,</div>
+<div class="verse">That to our plaints your ears are closed,</div>
+<div class="indent">Your doors barred from within?</div>
+</div>
+<div class="stanza">
+<div class="verse">Our Father, God; our Brother, Christ,</div>
+<div class="indent">Retrieve my race again;</div>
+<div class="verse">So shall you compass this black sheep,</div>
+<div class="indent">This pagan heart. Amen.</div>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_22">[22]</span>
+
+<h3 class="nobreak"><i>Wisdom Cometh With
+the Years</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">NOW I am young and credulous,</p></div>
+<div class="dcindent">My heart is quick to bleed</div>
+<div class="verse">At courage in the tremulous</div>
+<div class="indent">Slow sprouting of a seed.</div>
+</div>
+<div class="stanza">
+<div class="verse">Now I am young and sensitive,</div>
+<div class="indent">Man’s lack can stab me through;</div>
+<div class="verse">I own no stitch I would not give</div>
+<div class="indent">To him that asked me to.</div>
+</div>
+<div class="stanza">
+<div class="verse">Now I am young and a fool for love,</div>
+<div class="indent">My blood goes mad to see</div>
+<div class="verse">A brown girl pass me like a dove</div>
+<div class="indent">That flies melodiously.</div>
+</div>
+<div class="stanza">
+<div class="verse">Let me be lavish of my tears,</div>
+<div class="indent">And dream that false is true;</div>
+<div class="verse">Though wisdom cometh with the years,</div>
+<div class="indent">The barren days come, too.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_23">[23]</span>
+
+<h3 class="nobreak"><i>To My Fairer Brethren</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">THOUGH I score you with my best,</p></div>
+<div class="dcindent">Treble circumstance</div>
+<div class="verse">Must confirm the verdict, lest</div>
+<div class="indent">It be laid to chance.</div>
+</div>
+<div class="stanza">
+<div class="verse">Insufficient that I match you</div>
+<div class="indent">Every coin you flip;</div>
+<div class="verse">Your demand is that I catch you</div>
+<div class="indent">Squarely on the hip.</div>
+</div>
+<div class="stanza">
+<div class="verse">Should I wear my wreaths a bit</div>
+<div class="indent">Rakishly and proud,</div>
+<div class="verse">I have bought my right to it;</div>
+<div class="indent">Let it be allowed.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_24">[24]</span>
+
+<h3 class="nobreak"><i>Fruit of the Flower</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">MY father is a quiet man</p></div>
+<div class="dcindent">With sober, steady ways;</div>
+<div class="verse">For simile, a folded fan;</div>
+<div class="indent">His nights are like his days.</div>
+</div>
+<div class="stanza">
+<div class="verse">My mother’s life is puritan,</div>
+<div class="indent">No hint of cavalier,</div>
+<div class="verse">A pool so calm you’re sure it can</div>
+<div class="indent">Have little depth to fear.</div>
+</div>
+<div class="stanza">
+<div class="verse">And yet my father’s eyes can boast</div>
+<div class="indent">How full his life has been;</div>
+<div class="verse">There haunts them yet the languid ghost</div>
+<div class="indent">Of some still sacred sin.</div>
+</div>
+<div class="stanza">
+<div class="verse">And though my mother chants of God,</div>
+<div class="indent">And of the mystic river,</div>
+<div class="verse">I’ve seen a bit of checkered sod</div>
+<div class="indent">Set all her flesh aquiver.</div>
+</div>
+<div class="stanza">
+<div class="verse">Why should he deem it pure mischance</div>
+<div class="indent">A son of his is fain</div>
+<div class="verse">To do a naked tribal dance</div>
+<div class="indent">Each time he hears the rain?</div>
+</div>
+<div class="stanza"><span class="pagenum" id="Page_25">[25]</span>
+<div class="verse">Why should she think it devil’s art</div>
+<div class="indent">That all my songs should be</div>
+<div class="verse">Of love and lovers, broken heart,</div>
+<div class="indent">And wild sweet agony?</div>
+</div>
+<div class="stanza">
+<div class="verse">Who plants a seed begets a bud,</div>
+<div class="indent">Extract of that same root;</div>
+<div class="verse">Why marvel at the hectic blood</div>
+<div class="indent">That flushes this wild fruit?</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_26">[26]</span>
+
+<h3 class="nobreak"><i>The Shroud of Color</i></h3>
+</div>
+
+<p class="center">(<i>For Llewellyn Ransom</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap2">“LORD, being dark,” I said, “I cannot bear</p></div>
+<div class="dcindent2">The further touch of earth, the scented air;</div>
+<div class="verse">Lord, being dark, forewilled to that despair</div>
+<div class="verse">My color shrouds me in, I am as dirt</div>
+<div class="verse">Beneath my brother’s heel; there is a hurt</div>
+<div class="verse">In all the simple joys which to a child</div>
+<div class="verse">Are sweet; they are contaminate, defiled</div>
+<div class="verse">By truths of wrongs the childish vision fails</div>
+<div class="verse">To see; too great a cost this birth entails.</div>
+<div class="verse">I strangle in this yoke drawn tighter than</div>
+<div class="verse">The worth of bearing it, just to be man.</div>
+<div class="verse">I am not brave enough to pay the price</div>
+<div class="verse">In full; I lack the strength to sacrifice.</div>
+<div class="verse">I who have burned my hands upon a star,</div>
+<div class="verse">And climbed high hills at dawn to view the far</div>
+<div class="verse">Illimitable wonderments of earth,</div>
+<div class="verse">For whom all cups have dripped the wine of mirth,</div>
+<div class="verse">For whom the sea has strained her honeyed throat</div><span class="pagenum" id="Page_27">[27]</span>
+<div class="verse">Till all the world was sea, and I a boat</div>
+<div class="verse">Unmoored, on what strange quest I willed to float;</div>
+<div class="verse">Who wore a many-colored coat of dreams,</div>
+<div class="verse">Thy gift, O Lord—I whom sun-dabbled streams</div>
+<div class="verse">Have washed, whose bare brown thighs have held the sun</div>
+<div class="verse">Incarcerate until his course was run,</div>
+<div class="verse">I who considered man a high-perfected</div>
+<div class="verse">Glass where loveliness could lie reflected,</div>
+<div class="verse">Now that I sway athwart Truth’s deep abyss,</div>
+<div class="verse">Denuding man for what he was and is,</div>
+<div class="verse">Shall breath and being so inveigle me</div>
+<div class="verse">That I can damn my dreams to hell, and be</div>
+<div class="verse">Content, each new-born day, anew to see</div>
+<div class="verse">The steaming crimson vintage of my youth</div>
+<div class="verse">Incarnadine the altar-slab of Truth?</div>
+</div>
+<div class="stanza">
+<div class="verse">Or hast Thou, Lord, somewhere I cannot see,</div>
+<div class="verse">A lamb imprisoned in a bush for me?</div>
+</div>
+<div class="stanza">
+<div class="verse">Not so? Then let me render one by one</div>
+<div class="verse">Thy gifts, while still they shine; some little sun</div>
+<div class="verse">Yet gilds these thighs; my coat, albeit worn,</div>
+<div class="verse">Still holds its colors fast; albeit torn,</div><span class="pagenum" id="Page_28">[28]</span>
+<div class="verse">My heart will laugh a little yet, if I</div>
+<div class="verse">May win of Thee this grace, Lord: on this high</div>
+<div class="verse">And sacrificial hill ’twixt earth and sky,</div>
+<div class="verse">To dream still pure all that I loved, and die.</div>
+<div class="verse">There is no other way to keep secure</div>
+<div class="verse">My wild chimeras; grave-locked against the lure</div>
+<div class="verse">Of Truth, the small hard teeth of worms, yet less</div>
+<div class="verse">Envenomed than the mouth of Truth, will bless</div>
+<div class="verse">Them into dust and happy nothingness.</div>
+<div class="verse">Lord, Thou art God; and I, Lord, what am I</div>
+<div class="verse">But dust? With dust my place. Lord, let me die.”</div>
+</div>
+<div class="stanza">
+<div class="verse">Across the earth’s warm, palpitating crust</div>
+<div class="verse">I flung my body in embrace; I thrust</div>
+<div class="verse">My mouth into the grass and sucked the dew,</div>
+<div class="verse">Then gave it back in tears my anguish drew;</div>
+<div class="verse">So hard I pressed against the ground, I felt</div>
+<div class="verse">The smallest sandgrain like a knife, and smelt</div>
+<div class="verse">The next year’s flowering; all this to speed</div>
+<div class="verse">My body’s dissolution, fain to feed</div>
+<div class="verse">The worms. And so I groaned, and spent my strength</div><span class="pagenum" id="Page_29">[29]</span>
+<div class="verse">Until, all passion spent, I lay full length</div>
+<div class="verse">And quivered like a flayed and bleeding thing.</div>
+</div>
+<div class="stanza">
+<div class="verse">So lay till lifted on a great black wing</div>
+<div class="verse">That had no mate nor flesh-apparent trunk</div>
+<div class="verse">To hamper it; with me all time had sunk</div>
+<div class="verse">Into oblivion; when I awoke</div>
+<div class="verse">The wing hung poised above two cliffs that broke</div>
+<div class="verse">The bowels of the earth in twain, and cleft</div>
+<div class="verse">The seas apart. Below, above, to left,</div>
+<div class="verse">To right, I saw what no man saw before:</div>
+<div class="verse">Earth, hell, and heaven; sinew, vein, and core.</div>
+<div class="verse">All things that swim or walk or creep or fly,</div>
+<div class="verse">All things that live and hunger, faint and die,</div>
+<div class="verse">Were made majestic then and magnified</div>
+<div class="verse">By sight so clearly purged and deified.</div>
+<div class="verse">The smallest bug that crawls was taller than</div>
+<div class="verse">A tree, the mustard seed loomed like a man.</div>
+<div class="verse">The earth that writhes eternally with pain</div>
+<div class="verse">Of birth, and woe of taking back her slain,</div>
+<div class="verse">Laid bare her teeming bosom to my sight,</div>
+<div class="verse">And all was struggle, gasping breath, and fight.</div>
+<div class="verse">A blind worm here dug tunnels to the light,</div>
+<div class="verse">And there a seed, racked with heroic pain,</div>
+<div class="verse">Thrust eager tentacles to sun and rain;</div><span class="pagenum" id="Page_30">[30]</span>
+<div class="verse">It climbed; it died; the old love conquered me</div>
+<div class="verse">To weep the blossom it would never be.</div>
+<div class="verse">But here a bud won light; it burst and flowered</div>
+<div class="verse">Into a rose whose beauty challenged, “Coward!”</div>
+<div class="verse">There was no thing alive save only I</div>
+<div class="verse">That held life in contempt and longed to die.</div>
+<div class="verse">And still I writhed and moaned, “The curse, the curse,</div>
+<div class="verse">Than animated death, can death be worse?”</div>
+</div>
+<div class="stanza">
+<div class="verse">“<i>Dark child of sorrow, mine no less, what art</i></div>
+<div class="verse"><i>Of mine can make thee see and play thy part?</i></div>
+<div class="verse"><i>The key to all strange things is in thy heart.</i>”</div>
+</div>
+<div class="stanza">
+<div class="verse">What voice was this that coursed like liquid fire</div>
+<div class="verse">Along my flesh, and turned my hair to wire?</div>
+</div>
+<div class="stanza">
+<div class="verse">I raised my burning eyes, beheld a field</div>
+<div class="verse">All multitudinous with carnal yield,</div>
+<div class="verse">A grim ensanguined mead whereon I saw</div>
+<div class="verse">Evolve the ancient fundamental law</div>
+<div class="verse">Of tooth and talon, fist and nail and claw.</div>
+<div class="verse">There with the force of living, hostile hills</div>
+<div class="verse">Whose clash the hemmed-in vale with clamor fills,</div><span class="pagenum" id="Page_31">[31]</span>
+<div class="verse">With greater din contended fierce majestic wills</div>
+<div class="verse">Of beast with beast, of man with man, in strife</div>
+<div class="verse">For love of what my heart despised, for life</div>
+<div class="verse">That unto me at dawn was now a prayer</div>
+<div class="verse">For night, at night a bloody heart-wrung tear</div>
+<div class="verse">For day again; for <i>this</i>, these groans</div>
+<div class="verse">From tangled flesh and interlockèd bones.</div>
+<div class="verse">And no thing died that did not give</div>
+<div class="verse">A testimony that it longed to live.</div>
+<div class="verse">Man, strange composite blend of brute and god,</div>
+<div class="verse">Pushed on, nor backward glanced where last he trod.</div>
+<div class="verse">He seemed to mount a misty ladder flung</div>
+<div class="verse">Pendant from a cloud, yet never gained a rung</div>
+<div class="verse">But at his feet another tugged and clung.</div>
+<div class="verse">My heart was still a pool of bitterness,</div>
+<div class="verse">Would yield nought else, nought else confess.</div>
+<div class="verse">I spoke (although no form was there</div>
+<div class="verse">To see, I knew an ear was there to hear),</div>
+<div class="verse">“Well, let them fight; they <i>can</i> whose flesh is fair.”</div>
+</div>
+<div class="stanza">
+<div class="verse">Crisp lightning flashed; a wave of thunder shook</div><span class="pagenum" id="Page_32">[32]</span>
+<div class="verse">My wing; a pause, and then a speaking, “Look.”</div>
+</div>
+<div class="stanza">
+<div class="verse">I scarce dared trust my ears or eyes for awe</div>
+<div class="verse">Of what they heard, and dread of what they saw;</div>
+<div class="verse">For, privileged beyond degree, this flesh</div>
+<div class="verse">Beheld God and His heaven in the mesh</div>
+<div class="verse">Of Lucifer’s revolt, saw Lucifer</div>
+<div class="verse">Glow like the sun, and like a dulcimer</div>
+<div class="verse">I heard his sin-sweet voice break on the yell</div>
+<div class="verse">Of God’s great warriors: Gabriel,</div>
+<div class="verse">Saint Clair and Michael, Israfel and Raphael.</div>
+<div class="verse">And strange it was to see God with His back</div>
+<div class="verse">Against a wall, to see Christ hew and hack</div>
+<div class="verse">Till Lucifer, pressed by the mighty pair,</div>
+<div class="verse">And losing inch by inch, clawed at the air</div>
+<div class="verse">With fevered wings; then, lost beyond repair,</div>
+<div class="verse">He tricked a mass of stars into his hair;</div>
+<div class="verse">He filled his hands with stars, crying as he fell,</div>
+<div class="verse">“A star’s a star although it burns in hell.”</div>
+<div class="verse">So God was left to His divinity,</div>
+<div class="verse">Omnipotent at that most costly fee.</div>
+</div>
+<div class="stanza">
+<div class="verse">There was a lesson here, but still the clod</div>
+<div class="verse">In me was sycophant unto the rod,</div><span class="pagenum" id="Page_33">[33]</span>
+<div class="verse">And cried, “Why mock me thus? Am I a god?”</div>
+</div>
+<div class="stanza">
+<div class="verse">“<i>One trial more: this failing, then I give</i></div>
+<div class="verse"><i>You leave to die; no further need to live.</i>”</div>
+</div>
+<div class="stanza">
+<div class="verse">Now suddenly a strange wild music smote</div>
+<div class="verse">A chord long impotent in me; a note</div>
+<div class="verse">Of jungles, primitive and subtle, throbbed</div>
+<div class="verse">Against my echoing breast, and tom-toms sobbed</div>
+<div class="verse">In every pulse-beat of my frame. The din</div>
+<div class="verse">A hollow log bound with a python’s skin</div>
+<div class="verse">Can make wrought every nerve to ecstasy,</div>
+<div class="verse">And I was wind and sky again, and sea,</div>
+<div class="verse">And all sweet things that flourish, being free.</div>
+</div>
+<div class="stanza">
+<div class="verse">Till all at once the music changed its key.</div>
+</div>
+<div class="stanza">
+<div class="verse">And now it was of bitterness and death,</div>
+<div class="verse">The cry the lash extorts, the broken breath</div>
+<div class="verse">Of liberty enchained; and yet there ran</div>
+<div class="verse">Through all a harmony of faith in man,</div>
+<div class="verse">A knowledge all would end as it began.</div>
+<div class="verse">All sights and sounds and aspects of my race</div>
+<div class="verse">Accompanied this melody, kept pace</div>
+<div class="verse">With it; with music all their hopes and hates</div><span class="pagenum" id="Page_34">[34]</span>
+<div class="verse">Were charged, not to be downed by all the fates.</div>
+<div class="verse">And somehow it was borne upon my brain</div>
+<div class="verse">How being dark, and living through the pain</div>
+<div class="verse">Of it, is courage more than angels have. I knew</div>
+<div class="verse">What storms and tumults lashed the tree that grew</div>
+<div class="verse">This body that I was, this cringing I</div>
+<div class="verse">That feared to contemplate a changing sky,</div>
+<div class="verse">This that I grovelled, whining, “Let me die,”</div>
+<div class="verse">While others struggled in Life’s abattoir.</div>
+<div class="verse">The cries of all dark people near or far</div>
+<div class="verse">Were billowed over me, a mighty surge</div>
+<div class="verse">Of suffering in which my puny grief must merge</div>
+<div class="verse">And lose itself; I had no further claim to urge</div>
+<div class="verse">For death; in shame I raised my dust-grimed head,</div>
+<div class="verse">And though my lips moved not, God knew I said,</div>
+<div class="verse">“Lord, not for what I saw in flesh or bone</div>
+<div class="verse">Of fairer men; not raised on faith alone;</div>
+<div class="verse">Lord, I will live persuaded by mine own.</div>
+<div class="verse">I cannot play the recreant to these;</div>
+<div class="verse">My spirit has come home, that sailed the doubtful seas.”</div>
+</div>
+<div class="stanza"><span class="pagenum" id="Page_35">[35]</span>
+<div class="verse">With the whiz of a sword that severs space,</div>
+<div class="verse">The wing dropped down at a dizzy pace,</div>
+<div class="verse">And flung me on my hill flat on my face;</div>
+<div class="verse">Flat on my face I lay defying pain,</div>
+<div class="verse">Glad of the blood in my smallest vein,</div>
+<div class="verse">And in my hands I clutched a loyal dream,</div>
+<div class="verse">Still spitting fire, bright twist and coil and gleam,</div>
+<div class="verse">And chiselled like a hound’s white tooth.</div>
+<div class="verse">“Oh, I will match you yet,” I cried, “to truth.”</div>
+</div>
+<div class="stanza">
+<div class="verse">Right glad I was to stoop to what I once had spurned,</div>
+<div class="verse">Glad even unto tears; I laughed aloud; I turned</div>
+<div class="verse">Upon my back, and though the tears for joy would run,</div>
+<div class="verse">My sight was clear; I looked and saw the rising sun.</div>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_36">[36]</span>
+
+<h3 class="nobreak"><i>Heritage</i></h3>
+</div>
+
+<p class="center">(<i>For Harold Jackman</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">WHAT is Africa to me:</p></div>
+<div class="dcindent2">Copper sun or scarlet sea,</div>
+<div class="verse">Jungle star or jungle track,</div>
+<div class="verse">Strong bronzed men, or regal black</div>
+<div class="verse">Women from whose loins I sprang</div>
+<div class="verse">When the birds of Eden sang?</div>
+<div class="verse"><i>One three centuries removed</i></div>
+<div class="verse"><i>From the scenes his fathers loved,</i></div>
+<div class="verse"><i>Spicy grove, cinnamon tree,</i></div>
+<div class="verse"><i>What is Africa to me?</i></div>
+</div>
+<div class="stanza">
+<div class="verse">So I lie, who all day long</div>
+<div class="verse">Want no sound except the song</div>
+<div class="verse">Sung by wild barbaric birds</div>
+<div class="verse">Goading massive jungle herds,</div>
+<div class="verse">Juggernauts of flesh that pass</div>
+<div class="verse">Trampling tall defiant grass</div>
+<div class="verse">Where young forest lovers lie,</div>
+<div class="verse">Plighting troth beneath the sky.</div>
+<div class="verse">So I lie, who always hear,</div>
+<div class="verse">Though I cram against my ear</div>
+<div class="verse">Both my thumbs, and keep them there,</div><span class="pagenum" id="Page_37">[37]</span>
+<div class="verse">Great drums throbbing through the air.</div>
+<div class="verse">So I lie, whose fount of pride,</div>
+<div class="verse">Dear distress, and joy allied,</div>
+<div class="verse">Is my somber flesh and skin,</div>
+<div class="verse">With the dark blood dammed within</div>
+<div class="verse">Like great pulsing tides of wine</div>
+<div class="verse">That, I fear, must burst the fine</div>
+<div class="verse">Channels of the chafing net</div>
+<div class="verse">Where they surge and foam and fret.</div>
+</div>
+<div class="stanza">
+<div class="verse">Africa? A book one thumbs</div>
+<div class="verse">Listlessly, till slumber comes.</div>
+<div class="verse">Unremembered are her bats</div>
+<div class="verse">Circling through the night, her cats</div>
+<div class="verse">Crouching in the river reeds,</div>
+<div class="verse">Stalking gentle flesh that feeds</div>
+<div class="verse">By the river brink; no more</div>
+<div class="verse">Does the bugle-throated roar</div>
+<div class="verse">Cry that monarch claws have leapt</div>
+<div class="verse">From the scabbards where they slept.</div>
+<div class="verse">Silver snakes that once a year</div>
+<div class="verse">Doff the lovely coats you wear,</div>
+<div class="verse">Seek no covert in your fear</div>
+<div class="verse">Lest a mortal eye should see;</div>
+<div class="verse">What’s your nakedness to me?</div>
+<div class="verse">Here no leprous flowers rear</div>
+<div class="verse">Fierce corollas in the air;</div><span class="pagenum" id="Page_38">[38]</span>
+<div class="verse">Here no bodies sleek and wet,</div>
+<div class="verse">Dripping mingled rain and sweat,</div>
+<div class="verse">Tread the savage measures of</div>
+<div class="verse">Jungle boys and girls in love.</div>
+<div class="verse">What is last year’s snow to me,</div>
+<div class="verse">Last year’s anything? The tree</div>
+<div class="verse">Budding yearly must forget</div>
+<div class="verse">How its past arose or set—</div>
+<div class="verse">Bough and blossom, flower, fruit,</div>
+<div class="verse">Even what shy bird with mute</div>
+<div class="verse">Wonder at her travail there,</div>
+<div class="verse">Meekly labored in its hair.</div>
+<div class="verse"><i>One three centuries removed</i></div>
+<div class="verse"><i>From the scenes his fathers loved,</i></div>
+<div class="verse"><i>Spicy grove, cinnamon tree,</i></div>
+<div class="verse"><i>What is Africa to me?</i></div>
+</div>
+<div class="stanza">
+<div class="verse">So I lie, who find no peace</div>
+<div class="verse">Night or day, no slight release</div>
+<div class="verse">From the unremittant beat</div>
+<div class="verse">Made by cruel padded feet</div>
+<div class="verse">Walking through my body’s street.</div>
+<div class="verse">Up and down they go, and back,</div>
+<div class="verse">Treading out a jungle track.</div>
+<div class="verse">So I lie, who never quite</div>
+<div class="verse">Safely sleep from rain at night—</div>
+<div class="verse">I can never rest at all</div><span class="pagenum" id="Page_39">[39]</span>
+<div class="verse">When the rain begins to fall;</div>
+<div class="verse">Like a soul gone mad with pain</div>
+<div class="verse">I must match its weird refrain;</div>
+<div class="verse">Ever must I twist and squirm,</div>
+<div class="verse">Writhing like a baited worm,</div>
+<div class="verse">While its primal measures drip</div>
+<div class="verse">Through my body, crying, “Strip!</div>
+<div class="verse">Doff this new exuberance.</div>
+<div class="verse">Come and dance the Lover’s Dance!”</div>
+<div class="verse">In an old remembered way</div>
+<div class="verse">Rain works on me night and day.</div>
+</div>
+<div class="stanza">
+<div class="verse">Quaint, outlandish heathen gods</div>
+<div class="verse">Black men fashion out of rods,</div>
+<div class="verse">Clay, and brittle bits of stone,</div>
+<div class="verse">In a likeness like their own,</div>
+<div class="verse">My conversion came high-priced;</div>
+<div class="verse">I belong to Jesus Christ,</div>
+<div class="verse">Preacher of humility;</div>
+<div class="verse">Heathen gods are naught to me.</div>
+</div>
+<div class="stanza">
+<div class="verse">Father, Son, and Holy Ghost,</div>
+<div class="verse">So I make an idle boast;</div>
+<div class="verse">Jesus of the twice-turned cheek,</div>
+<div class="verse">Lamb of God, although I speak</div>
+<div class="verse">With my mouth thus, in my heart</div>
+<div class="verse">Do I play a double part.</div><span class="pagenum" id="Page_40">[40]</span>
+<div class="verse">Ever at Thy glowing altar</div>
+<div class="verse">Must my heart grow sick and falter,</div>
+<div class="verse">Wishing He I served were black,</div>
+<div class="verse">Thinking then it would not lack</div>
+<div class="verse">Precedent of pain to guide it,</div>
+<div class="verse">Let who would or might deride it;</div>
+<div class="verse">Surely then this flesh would know</div>
+<div class="verse">Yours had borne a kindred woe.</div>
+<div class="verse">Lord, I fashion dark gods, too,</div>
+<div class="verse">Daring even to give You</div>
+<div class="verse">Dark despairing features where,</div>
+<div class="verse">Crowned with dark rebellious hair,</div>
+<div class="verse">Patience wavers just so much as</div>
+<div class="verse">Mortal grief compels, while touches</div>
+<div class="verse">Quick and hot, of anger, rise</div>
+<div class="verse">To smitten cheek and weary eyes.</div>
+<div class="verse">Lord, forgive me if my need</div>
+<div class="verse">Sometimes shapes a human creed.</div>
+</div>
+<div class="stanza">
+<div class="verse"><i>All day long and all night through,</i></div>
+<div class="verse"><i>One thing only must I do:</i></div>
+<div class="verse"><i>Quench my pride and cool my blood,</i></div>
+<div class="verse"><i>Lest I perish in the flood.</i></div>
+<div class="verse"><i>Lest a hidden ember set</i></div>
+<div class="verse"><i>Timber that I thought was wet</i></div>
+<div class="verse"><i>Burning like the dryest flax,</i></div><span class="pagenum" id="Page_41">[41]</span>
+<div class="verse"><i>Melting like the merest wax,</i></div>
+<div class="verse"><i>Lest the grave restore its dead.</i></div>
+<div class="verse"><i>Not yet has my heart or head</i></div>
+<div class="verse"><i>In the least way realized</i></div>
+<div class="verse"><i>They and I are civilized.</i></div>
+</div></div></div>
+
+<p><span class="pagenum" id="Page_42">[42]</span></p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_43">[43]</span>
+<h2 class="nobreak" id="Epitaphs"><i>Epitaphs</i></h2>
+</div>
+
+<p><span class="pagenum" id="Page_44">[44]</span></p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_45">[45]</span>
+<h3 class="nobreak"><i>For a Poet</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap">I HAVE wrapped my dreams in a silken cloth,</p></div>
+<div class="verse"> And laid them away in a box of gold;</div>
+<div class="verse">Where long will cling the lips of the moth,</div>
+<div class="verse">I have wrapped my dreams in a silken cloth;</div>
+<div class="verse">I hide no hate; I am not even wroth</div>
+<div class="verse">Who found earth’s breath so keen and cold;</div>
+<div class="verse">I have wrapped my dreams in a silken cloth,</div>
+<div class="verse">And laid them away in a box of gold.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_46">[46]</span>
+
+<h3 class="nobreak"><i>For My Grandmother</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">THIS lovely flower fell to seed;</p></div>
+<div class="dcindent">Work gently, sun and rain;</div>
+<div class="verse">She held it as her dying creed</div>
+<div class="indent">That she would grow again.</div>
+</div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_47">[47]</span>
+
+<h3 class="nobreak"><i>For a Cynic</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">BIRTH is a crime</p></div>
+<div class="dcindent2">All men commit;</div>
+<div class="verse">Life gives them time</div>
+<div class="verse">To atone for it;</div>
+<div class="verse">Death ends the rhyme</div>
+<div class="verse">As the price for it.</div>
+</div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_48">[48]</span>
+
+<h3 class="nobreak"><i>For a Singer</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">DEATH clogged this flute</p></div>
+<div class="dcindent">At its highest note;</div>
+<div class="verse">Song sleeps here mute</div>
+<div class="indent">In this breathless throat.</div>
+</div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_49">[49]</span>
+
+<h3 class="nobreak"><i>For a Virgin</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">FOR forty years I shunned the lust</p></div>
+<div class="dcindent">Inherent in my clay;</div>
+<div class="verse">Death only was so amorous</div>
+<div class="indent">I let him have his way.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_50">[50]</span>
+
+<h3 class="nobreak"><i>For a Lady I Know</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">SHE even thinks that up in heaven</p></div>
+<div class="dcindent">Her class lies late and snores,</div>
+<div class="verse">While poor black cherubs rise at seven</div>
+<div class="indent">To do celestial chores.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_51">[51]</span>
+
+<h3 class="nobreak"><i>For a Lovely Lady</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">A CREATURE slender as a reed,</p></div>
+<div class="dcindent">And sad-eyed as a doe</div>
+<div class="verse">Lies here (but take my word for it,</div>
+<div class="indent">And do not pry below).</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_52">[52]</span>
+
+<h3 class="nobreak"><i>For an Atheist</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">MOUNTAINS cover me like rain,</p></div>
+<div class="dcindent2">Billows whirl and rise;</div>
+<div class="verse">Hide me from the stabbing pain</div>
+<div class="verse">In His reproachful eyes.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_53">[53]</span>
+
+<h3 class="nobreak"><i>For an Evolutionist
+and His Opponent</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">SHOWING that our ways agreed,</p></div>
+<div class="dcindent">Death is proof enough;</div>
+<div class="verse">Body seeks the primal clay,</div>
+<div class="indent">Soul transcends the slough.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_54">[54]</span>
+
+<h3 class="nobreak"><i>For an Anarchist</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">WHAT matters that I stormed and swore?</p></div>
+<div class="dcindent2">Not Samson with an ass’s jaw,</div>
+<div class="verse">Not though a forest of hair he wore,</div>
+<div class="verse">Could break death’s adamantine law.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_55">[55]</span>
+
+<h3 class="nobreak"><i>For a Magician</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap">I WHOSE magic could explore</p></div>
+<div class="indent">Ways others might not guess or see,</div>
+<div class="verse">Now am barred behind a door</div>
+<div class="indent">That has no “Open Sesame.”</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_56">[56]</span>
+
+<h3 class="nobreak"><i>For a Pessimist</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">HE wore his coffin for a hat,</p></div>
+<div class="dcindent">Calamity his cape,</div>
+<div class="verse">While on his face a death’s-head sat</div>
+<div class="indent">And waved a bit of crape.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_57">[57]</span>
+
+<h3 class="nobreak"><i>For a Mouthy Woman</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">GOD and the devil still are wrangling &#160; </p></div>
+<div class="dcindent">Which should have her, which repel;</div>
+<div class="verse">God wants no discord in his heaven;</div>
+<div class="indent">Satan has enough in hell.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_58">[58]</span>
+
+<h3 class="nobreak"><i>For a Philosopher</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">HERE lies one who tried to solve</p></div>
+<div class="dcindent">The riddle of being and breath:</div>
+<div class="verse">The wee blind mole that gnaws his bones</div>
+<div class="indent">Tells him the answer is death.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_59">[59]</span>
+
+<h3 class="nobreak"><i>For an Unsuccessful Sinner</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap">I BOASTED my sins were sure to sink me</p></div>
+<div class="indent">Out of all sound and sight of glory;</div>
+<div class="verse">And the most I’ve won for all my pains</div>
+<div class="indent">Is a century of purgatory.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_60">[60]</span>
+
+<h3 class="nobreak"><i>For a Fool</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">ON earth the wise man makes the rules,</p></div>
+<div class="dcindent">And is the fool’s adviser,</div>
+<div class="verse">But here the wise are as the fools,</div>
+<div class="indent">(And no man is the wiser).</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_61">[61]</span>
+
+<h3 class="nobreak"><i>For One Who Gayly
+Sowed His Oats</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">MY days were a thing for me to live,</p></div>
+<div class="dcindent">For others to deplore;</div>
+<div class="verse">I took of life all it could give:</div>
+<div class="indent">Rind, inner fruit, and core.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_62">[62]</span>
+
+<h3 class="nobreak"><i>For a Skeptic</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">BLOOD-BROTHER unto Thomas whose</p></div>
+<div class="dcindent">Weak faith doubt kept in trammels,</div>
+<div class="verse">His little credence strained at gnats—</div>
+<div class="indent">But grew robust on camels.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_63">[63]</span>
+
+<h3 class="nobreak"><i>For a Fatalist</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap2">LIFE ushers some as heirs-elect</p></div>
+<div class="dcindent">To weather wind and gale;</div>
+<div class="verse">Here lies a man whose ships were wrecked</div>
+<div class="indent">Ere he could hoist a sail.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_64">[64]</span>
+
+<h3 class="nobreak"><i>For Daughters of Magdalen</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">OURS is the ancient story:</p></div>
+<div class="dcindent">Delicate flowers of sin,</div>
+<div class="verse">Lilies, arrayed in glory,</div>
+<div class="indent">That would not toil nor spin.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_65">[65]</span>
+
+<h3 class="nobreak"><i>For a Wanton</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">TO men no more than so much cover</p></div>
+<div class="dcindent">For them to doff or try,</div>
+<div class="verse">I found in Death a constant lover:</div>
+<div class="indent">Here in his arms I lie.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_66">[66]</span>
+
+<h3 class="nobreak"><i>For a Preacher</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">VANITY of vanities,</p></div>
+<div class="dcindent">All is vanity; yea,</div>
+<div class="verse">Even the rod He flayed you with</div>
+<div class="indent">Crumbled and turned to clay.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_67">[67]</span>
+
+<h3 class="nobreak"><i>For One Who Died
+Singing of Death</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">HE whose might you sang so well</p></div>
+<div class="dcindent">Living, will not let you rust:</div>
+<div class="verse">Death has set the golden bell</div>
+<div class="indent">Pealing in the courts of dust.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_68">[68]</span>
+
+<h3 class="nobreak"><i>For John Keats,
+Apostle of Beauty</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">NOT writ in water, nor in mist,</p></div>
+<div class="dcindent">Sweet lyric throat, thy name;</div>
+<div class="verse">Thy singing lips that cold death kissed</div>
+<div class="indent">Have seared his own with flame.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_69">[69]</span>
+
+<h3 class="nobreak"><i>For Hazel Hall,
+American Poet</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">SOUL-TROUBLED at the febrile ways of breath,</p></div>
+<div class="dcindent"> &#160; Her timid breast shot through with faint alarm,</div>
+<div class="verse">“Yes, I’m a stranger here,” she said to Death,</div>
+<div class="indent">“It’s kind of you to let me take your arm.”</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_70">[70]</span>
+
+<h3 class="nobreak"><i>For Paul Laurence Dunbar</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">BORN of the sorrowful of heart,</p></div>
+<div class="dcindent">Mirth was a crown upon his head;</div>
+<div class="verse">Pride kept his twisted lips apart</div>
+<div class="indent">In jest, to hide a heart that bled. &#160; &#160; </div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_71">[71]</span>
+
+<h3 class="nobreak"><i>For Joseph Conrad</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">NOT of the dust, but of the wave</p></div>
+<div class="dcindent2">His final couch should be;</div>
+<div class="verse">They lie not easy in a grave</div>
+<div class="verse">Who once have known the sea.</div>
+<div class="verse">How shall earth’s meagre bed enthrall</div>
+<div class="verse">The hardiest seaman of them all?</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_72">[72]</span>
+
+<h3 class="nobreak"><i>For Myself</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">WHAT’S in this grave is worth your tear;</p></div>
+<div class="dcindent">There’s more than the eye can see;</div>
+<div class="verse">Folly and Pride and Love lie here</div>
+<div class="indent">Buried alive with me.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_73">[73]</span>
+
+<h3 class="nobreak"><i>All the Dead</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">PRIEST and layman, virgin, strumpet,</p></div>
+<div class="dcindent">Good and ill commingled sleep,</div>
+<div class="verse">Waiting till the dreadful trumpet</div>
+<div class="indent">Separates the wolves and sheep.</div>
+</div></div>
+<p><span class="pagenum" id="Page_74">[74]</span></p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_75">[75]</span>
+<h2 class="nobreak"><i>For Love’s Sake</i></h2>
+</div>
+
+<p><span class="pagenum" id="Page_76">[76]</span></p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_77">[77]</span>
+<h3 class="nobreak"><i>Oh, for a Little While
+Be Kind</i></h3>
+</div>
+
+<p class="center">(<i>For Ruth Marie</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">OH, for a little while be kind to me</p></div>
+<div class="dcindent2">Who stand in such imperious need of you,</div>
+<div class="verse">And for a fitful space let my head lie</div>
+<div class="verse">Happily on your passion’s frigid breast.</div>
+<div class="verse">Although yourself no more resigned to me</div>
+<div class="verse">Than on all bitter yesterdays I knew,</div>
+<div class="verse">This half a loaf from sumptuous crumbs your shy</div>
+<div class="verse">Reneging hand lets fall shall make me blest.</div>
+<div class="verse">The sturdy homage of a love that throws</div>
+<div class="verse">Its strength about you, dawn and dusk, at bed</div>
+<div class="verse">And board, is not for scorn. When all is said</div>
+<div class="verse">With final amen certitude, who knows</div>
+<div class="verse">But Dives found a matchless fragrance fled</div>
+<div class="verse">When Lazarus no longer shocked his nose?</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_78">[78]</span>
+
+<h3 class="nobreak"><i>If You Should Go</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap2">LOVE, leave me like the light,</p></div>
+<div class="dcindent">The gently passing day;</div>
+<div class="verse">We would not know, but for the night,</div>
+<div class="indent">When it has slipped away.</div>
+</div>
+<div class="stanza">
+<div class="verse">Go quietly; a dream,</div>
+<div class="indent">When done, should leave no trace</div>
+<div class="verse">That it has lived, except a gleam</div>
+<div class="indent">Across the dreamer’s face.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_79">[79]</span>
+
+<h3 class="nobreak"><i>To One Who Said Me Nay</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">THIS much the gods vouchsafe today:</p></div>
+<div class="dcindent">That we two lie in the clover,</div>
+<div class="verse">Watching the heavens dip and sway,</div>
+<div class="indent">With galleons sailing over.</div>
+</div>
+<div class="stanza">
+<div class="verse">This much is granted for an hour:</div>
+<div class="indent">That we are young and tender,</div>
+<div class="verse">That I am bee and you are flower,</div>
+<div class="indent">Honey-mouthed and swaying slender.</div>
+</div>
+<div class="stanza">
+<div class="verse">This sweet of sweets is ours now:</div>
+<div class="indent">To wander through the land,</div>
+<div class="verse">Plucking an apple from its bough</div>
+<div class="indent">To toss from hand to hand.</div>
+</div>
+<div class="stanza">
+<div class="verse">No thing is certain, joy nor sorrow,</div>
+<div class="indent">Except the hour we know it;</div>
+<div class="verse">Oh, wear my heart today; tomorrow</div>
+<div class="indent">Who knows where the winds will blow it?</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_80">[80]</span>
+
+<h3 class="nobreak"><i>Advice to Youth</i></h3>
+</div>
+
+<p class="center">(<i>For Guillaume</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">SINCE little time is granted here</p></div>
+<div class="dcindent">For pride in pain or play,</div>
+<div class="verse">Since blood soon cools before that Fear</div>
+<div class="indent">That makes our prowess clay,</div>
+<div class="verse">If lips to kiss are freely met,</div>
+<div class="indent">Lad, be not proud nor shy;</div>
+<div class="verse">There are no lips where men forget,</div>
+<div class="indent">And undesiring lie.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_81">[81]</span>
+
+<h3 class="nobreak"><i>Caprice</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">“I ’LL tell him, when he comes,” she said,</p></div>
+<div class="dcindent">“Body and baggage, to go,</div>
+<div class="verse">Though the night be darker than my hair,</div>
+<div class="indent">And the ground be hard with snow.”</div>
+</div>
+<div class="stanza">
+<div class="verse">But when he came with his gay black head</div>
+<div class="indent">Thrown back, and his lips apart,</div>
+<div class="verse">She flipped a light hair from his coat,</div>
+<div class="indent">And sobbed against his heart.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_82">[82]</span>
+
+<h3 class="nobreak"><i>Sacrament</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">SHE gave her body for my meat,</p></div>
+<div class="dcindent">Her soul to be my wine,</div>
+<div class="verse">And prayed that I be made complete</div>
+<div class="indent">In sunlight and starshine.</div>
+</div>
+<div class="stanza">
+<div class="verse">With such abandoned grace she gave</div>
+<div class="indent">Of all that passion taught her,</div>
+<div class="verse">She never knew her tidal wave</div>
+<div class="indent">Cast bread on stagnant water.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_83">[83]</span>
+
+<h3 class="nobreak"><i>Bread and Wine</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">FROM death of star to new star’s birth,</p></div>
+<div class="dcindent">This ache of limb, this throb of head,</div>
+<div class="verse">This sweaty shop, this smell of earth,</div>
+<div class="indent">For this we pray, “Give daily bread.”</div>
+</div>
+<div class="stanza">
+<div class="verse">Then tenuous with dreams the night,</div>
+<div class="indent">The feel of soft brown hands in mine,</div>
+<div class="verse">Strength from your lips for one more fight:</div>
+<div class="indent">Bread’s not so dry when dipped in wine.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_84">[84]</span>
+
+<h3 class="nobreak"><i>Spring Reminiscence</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">“MY sweet,” you sang, and, “Sweet,” I sang,</p></div>
+<div class="dcindent">And sweet we sang together,</div>
+<div class="verse">Glad to be young as the world was young,</div>
+<div class="indent">Two colts too strong for a tether.</div>
+</div>
+<div class="stanza">
+<div class="verse">Shall ever a spring be like that spring,</div>
+<div class="indent">Or apple blossoms as white;</div>
+<div class="verse">Or ever clover smell like the clover</div>
+<div class="indent">We lay upon that night?</div>
+</div>
+<div class="stanza">
+<div class="verse">Shall ever your hand lie in my hand,</div>
+<div class="indent">Pulsing to it, I wonder;</div>
+<div class="verse">Or have the gods, being jealous gods,</div>
+<div class="indent">Envied us our thunder?</div>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_85">[85]</span>
+<h2 class="nobreak"><i>Varia</i></h2>
+</div>
+
+<p><span class="pagenum" id="Page_86">[86]</span></p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_87">[87]</span>
+<h3 class="nobreak" id="Suicide_Chant"><i>Suicide Chant</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap">I AM the seed</p></div>
+<div class="indent">The Sower sowed;</div>
+<div class="verse">I am the deed</div>
+<div class="indent">His hand bestowed</div>
+<div class="verse">Upon the world.</div>
+</div>
+<div class="stanza">
+<div class="verse">Censure me not</div>
+<div class="indent">If a rank weed flood</div>
+<div class="verse">The garden plot,</div>
+<div class="indent">Instead of a bud</div>
+<div class="verse">To be unfurled.</div>
+</div>
+<div class="stanza">
+<div class="verse">Bridle your blame</div>
+<div class="indent">If the deed prove less</div>
+<div class="verse">Than the bruited fame</div>
+<div class="indent">With which it came</div>
+<div class="verse">From nothingness.</div>
+</div>
+<div class="stanza">
+<div class="verse">The seed of a weed</div>
+<div class="indent">Cannot be flowered,</div>
+<div class="verse">Nor a hero’s deed</div>
+<div class="indent">Spring from a coward.</div>
+<span class="pagenum" id="Page_88">[88]</span>
+<div class="verse">Pull up the weed;</div>
+<div class="indent">Bring plow and mower;</div>
+<div class="verse">Then fetch new seed</div>
+<div class="indent">For the hand of the Sower.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_89">[89]</span>
+
+<h3 class="nobreak"><i>She of the Dancing Feet
+Sings</i></h3>
+</div>
+
+<p class="center">(<i>To Ottie Graham</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap2">“AND what would I do in heaven, pray,</p></div>
+<div class="dcindent">Me with my dancing feet,</div>
+<div class="verse">And limbs like apple boughs that sway</div>
+<div class="indent">When the gusty rain winds beat?</div>
+</div>
+<div class="stanza">
+<div class="verse">And how would I thrive in a perfect place</div>
+<div class="indent">Where dancing would be sin,</div>
+<div class="verse">With not a man to love my face,</div>
+<div class="indent">Nor an arm to hold me in?</div>
+</div>
+<div class="stanza">
+<div class="verse">The seraphs and the cherubim</div>
+<div class="indent">Would be too proud to bend</div>
+<div class="verse">To sing the faery tunes that brim</div>
+<div class="indent">My heart from end to end.</div>
+</div>
+<div class="stanza">
+<div class="verse">The wistful angels down in hell</div>
+<div class="indent">Will smile to see my face,</div>
+<div class="verse">And understand, because they fell</div>
+<div class="indent">From that all-perfect place.”</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_90">[90]</span>
+
+<h3 class="nobreak"><i>Judas Iscariot</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap">I THINK when Judas’ mother heard</p></div>
+<div class="indent">His first faint cry the night</div>
+<div class="verse">That he was born, that worship stirred</div>
+<div class="indent">Her at the sound and sight.</div>
+<div class="verse">She thought his was as fair a frame</div>
+<div class="indent">As flesh and blood had worn;</div>
+<div class="verse">I think she made this lovely name</div>
+<div class="indent">For him—“Star of my morn.”</div>
+</div>
+<div class="stanza">
+<div class="verse">As any mother’s son he grew</div>
+<div class="indent">From spring to crimson spring;</div>
+<div class="verse">I think his eyes were black, or blue,</div>
+<div class="indent">His hair curled like a ring.</div>
+<div class="verse">His mother’s heart-strings were a lute</div>
+<div class="indent">Whereon he all day played;</div>
+<div class="verse">She listened rapt, abandoned, mute,</div>
+<div class="indent">To every note he made.</div>
+</div>
+<div class="stanza">
+<div class="verse">I think he knew the growing Christ,</div>
+<div class="indent">And played with Mary’s son,</div>
+<div class="verse">And where mere mortal craft sufficed,</div>
+<div class="indent">There Judas may have won.</div><span class="pagenum" id="Page_91">[91]</span>
+<div class="verse">Perhaps he little cared or knew,</div>
+<div class="indent">So folly-wise is youth,</div>
+<div class="verse">That He whose hand his hand clung to</div>
+<div class="indent">Was flesh-embodied Truth;</div>
+</div>
+<div class="stanza">
+<div class="verse">Until one day he heard young Christ,</div>
+<div class="indent">With far-off eyes agleam,</div>
+<div class="verse">Tell of a mystic, solemn tryst</div>
+<div class="indent">Between Him and a dream.</div>
+<div class="verse">And Judas listened, wonder-eyed,</div>
+<div class="indent">Until the Christ was through,</div>
+<div class="verse">Then said, “And I, though good betide,</div>
+<div class="indent">Or ill, will go with you.”</div>
+</div>
+<div class="stanza">
+<div class="verse">And so he followed, heard Christ preach,</div>
+<div class="indent">Saw how by miracle</div>
+<div class="verse">The blind man saw, the dumb got speech,</div>
+<div class="indent">The leper found him well.</div>
+<div class="verse">And Judas in those holy hours</div>
+<div class="indent">Loved Christ, and loved Him much,</div>
+<div class="verse">And in his heart he sensed dead flowers</div>
+<div class="indent">Bloom at the Master’s touch.</div>
+</div>
+<div class="stanza">
+<div class="verse">And when Christ felt the death hour creep</div>
+<div class="indent">With sullen, drunken lurch,</div>
+<div class="verse">He said to Peter, “Feed my sheep,</div>
+<div class="indent">And build my holy church.”</div><span class="pagenum" id="Page_92">[92]</span>
+<div class="verse">He gave to each the special task</div>
+<div class="indent">That should be his to do,</div>
+<div class="verse">But reaching one, I hear him ask,</div>
+<div class="indent">“What shall I give to you?”</div>
+</div>
+<div class="stanza">
+<div class="verse">Then Judas in his hot desire</div>
+<div class="indent">Said, “Give me what you will.”</div>
+<div class="verse">Christ spoke to him with words of fire,</div>
+<div class="indent">“Then, Judas, you must kill</div>
+<div class="verse">One whom you love, One who loves you</div>
+<div class="indent">As only God’s son can:</div>
+<div class="verse">This is the work for you to do</div>
+<div class="indent">To save the creature man.”</div>
+</div>
+<div class="stanza">
+<div class="verse">“And men to come will curse your name,</div>
+<div class="indent">And hold you up to scorn;</div>
+<div class="verse">In all the world will be no shame</div>
+<div class="indent">Like yours; this is love’s thorn.</div>
+<div class="verse">It takes strong will of heart and soul,</div>
+<div class="indent">But man is under ban.</div>
+<div class="verse">Think, Judas, can you play this role</div>
+<div class="indent">In heaven’s mystic plan?”</div>
+</div>
+<div class="stanza">
+<div class="verse">So Judas took the sorry part,</div>
+<div class="indent">Went out and spoke the word,</div>
+<div class="verse">And gave the kiss that broke his heart,</div>
+<div class="indent">But no one knew or heard.</div><span class="pagenum" id="Page_93">[93]</span>
+<div class="verse">And no one knew what poison ate</div>
+<div class="indent">Into his palm that day,</div>
+<div class="verse">Where, bright and damned, the monstrous weight</div>
+<div class="indent">Of thirty white coins lay.</div>
+</div>
+<div class="stanza">
+<div class="verse">It was not death that Judas found</div>
+<div class="indent">Upon a kindly tree;</div>
+<div class="verse">The man was dead long ere he bound</div>
+<div class="indent">His throat as final fee.</div>
+<div class="verse">And who can say if on that day</div>
+<div class="indent">When gates of pearl swung wide,</div>
+<div class="verse">Christ did not go His honored way</div>
+<div class="indent">With Judas by His side?</div>
+</div>
+<div class="stanza">
+<div class="verse">I think somewhere a table round</div>
+<div class="indent">Owns Jesus as its head,</div>
+<div class="verse">And there the saintly twelve are found</div>
+<div class="indent">Who followed where He led.</div>
+<div class="verse">And Judas sits down with the rest,</div>
+<div class="indent">And none shrinks from His hand,</div>
+<div class="verse">For there the worst is as the best,</div>
+<div class="indent">And there they understand.</div>
+</div>
+<div class="stanza">
+<div class="verse">And you may think of Judas, friend,</div>
+<div class="indent">As one who broke his word,</div><span class="pagenum" id="Page_94">[94]</span>
+<div class="verse">Whose neck came to a bitter end</div>
+<div class="indent">For giving up his Lord.</div>
+<div class="verse">But I would rather think of him</div>
+<div class="indent">As the little Jewish lad</div>
+<div class="verse">Who gave young Christ heart, soul, and limb,</div>
+<div class="indent">And all the love he had.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_95">[95]</span>
+
+<h3 class="nobreak"><i>The Wise</i></h3>
+</div>
+
+<p class="center">(<i>For Alain Locke</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">DEAD men are wisest, for they know</p></div>
+<div class="dcindent2">How far the roots of flowers go,</div>
+<div class="verse">How long a seed must rot to grow.</div>
+</div>
+<div class="stanza">
+<div class="verse">Dead men alone bear frost and rain</div>
+<div class="verse">On throbless heart and heatless brain,</div>
+<div class="verse">And feel no stir of joy or pain.</div>
+</div>
+<div class="stanza">
+<div class="verse">Dead men alone are satiate;</div>
+<div class="verse">They sleep and dream and have no weight,</div>
+<div class="verse">To curb their rest, of love or hate.</div>
+</div>
+<div class="stanza">
+<div class="verse">Strange, men should flee their company,</div>
+<div class="verse">Or think me strange who long to be</div>
+<div class="verse">Wrapped in their cool immunity.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_96">[96]</span>
+
+<h3 class="nobreak"><i>Mary, Mother of Christ</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">THAT night she felt those searching hands</p></div>
+<div class="dcindent2">Grip deep upon her breast,</div>
+<div class="verse">She laughed and sang a silly tune</div>
+<div class="verse">To lull her babe to rest;</div>
+</div>
+<div class="stanza">
+<div class="verse">That night she kissed his coral lips</div>
+<div class="verse">How could she know the rest?</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_97">[97]</span>
+
+<h3 class="nobreak"><i>Dialogue</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse">Soul: <p class="drop-cap4">THERE is no stronger thing than song;</p></div>
+<div class="dcindent3">In sun and rain and leafy trees</div>
+<div class="indent3">It wafts the timid soul along</div>
+<div class="indent3">On crested waves of melodies.</div>
+</div>
+<div class="stanza">
+<div class="verse">Body: But leaves the body bare to feed</div>
+<div class="indent3">Its hunger with its very need.</div>
+</div>
+<div class="stanza">
+<div class="verse">Soul:&#160; Although the frenzied belly writhes,</div>
+<div class="indent3">Yet render up in song your tithes;</div>
+<div class="indent3">Song is the weakling’s oaken rod,</div>
+<div class="indent3">His Jacob’s ladder dropped from God.</div>
+</div>
+<div class="stanza">
+<div class="verse">Body: Song is not drink; song is not meat,</div>
+<div class="indent3">Nor strong, thick shoes for naked feet.</div>
+</div>
+<div class="stanza">
+<div class="verse">Soul:&#160; Who sings by unseen hands is fed</div>
+<div class="indent3">With honeyed milk and warm, white bread;</div>
+<div class="indent3">His ways in pastures green are led,</div>
+<div class="indent3">And perfumed oil illumes his head;</div><span class="pagenum" id="Page_98">[98]</span>
+<div class="indent3">His cup with wine is surfeited,</div>
+<div class="indent3">And when the last low note is read,</div>
+<div class="indent3">He sings among the lipless dead</div>
+<div class="indent3">With singing stars to crown his head.</div>
+</div>
+<div class="stanza">
+<div class="verse">Body: But will song buy a wooden box</div>
+<div class="indent3">The length of me from toe to crown,</div>
+<div class="indent3">To keep me safe from carrion flocks</div>
+<div class="indent3">When singing’s done and lyre laid down?</div>
+</div></div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_99">[99]</span>
+
+<h3 class="nobreak"><i>In Memory of
+Col. Charles Young</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap2">ALONG the shore the tall, thin grass</p></div>
+<div class="dcindent">That fringes that dark river,</div>
+<div class="verse">While sinuously soft feet pass,</div>
+<div class="indent">Begins to bleed and quiver.</div>
+</div>
+<div class="stanza">
+<div class="verse">The great dark voice breaks with a sob</div>
+<div class="indent">Across the womb of night;</div>
+<div class="verse">Above your grave the tom-toms throb,</div>
+<div class="indent">And the hills are weird with light.</div>
+</div>
+<div class="stanza">
+<div class="verse">The great dark heart is like a well</div>
+<div class="indent">Drained bitter by the sky,</div>
+<div class="verse">And all the honeyed lies they tell</div>
+<div class="indent">Come there to thirst and die.</div>
+</div>
+<div class="stanza">
+<div class="verse">No lie is strong enough to kill</div>
+<div class="indent">The roots that work below;</div>
+<div class="verse">From your rich dust and slaughtered will</div>
+<div class="indent">A tree with tongues will grow.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_100">[100]</span>
+
+<h3 class="nobreak"><i>To My Friends</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap3">YOU feeble few that hold me somewhat more</p></div>
+<div class="dcindent2">Than all I am; base clay and spittle joined</div>
+<div class="verse">To shape an aimless whim substantial; coined</div>
+<div class="verse">Amiss one idle hour, this heart, though poor,—</div>
+<div class="verse">O golden host I count upon the ends</div>
+<div class="verse">Of one bare hand, with fingers still to spare,—</div>
+<div class="verse">Is rich enough for this: to harbor there</div>
+<div class="verse">In opulence its frugal meed of friends.</div>
+<div class="verse">Let neither lose his faith, lest by such loss</div>
+<div class="verse">Each find insufferable his daily cross.</div>
+<div class="verse">And be not less immovable to me,</div>
+<div class="verse">Not less love-leal and staunch, than my heart is.</div>
+<div class="verse">In brief, these fine heroics come to this,</div>
+<div class="verse">My friends: if you are true, I needs must be.</div>
+</div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_101">[101]</span>
+
+<h3 class="nobreak"><i>Gods</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap">I FAST and pray and go to church,</p></div>
+<div class="indent">And put my penny in,</div>
+<div class="verse">But God’s not fooled by such slight tricks,</div>
+<div class="indent">And I’m not saved from sin.</div>
+</div>
+<div class="stanza">
+<div class="verse">I cannot hide from Him the gods</div>
+<div class="indent">That revel in my heart,</div>
+<div class="verse">Nor can I find an easy word</div>
+<div class="indent">To tell them to depart:</div>
+</div>
+<div class="stanza">
+<div class="verse">God’s alabaster turrets gleam</div>
+<div class="indent">Too high for me to win,</div>
+<div class="verse">Unless He turns His face and lets</div>
+<div class="indent">Me bring my own gods in.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_102">[102]</span>
+
+<h3 class="nobreak" id="To_John_Keats_Poet"><i>To John Keats, Poet.
+At Spring Time</i><a id="FNanchor_1" href="#Footnote_1" class="fnanchor"><small>[A]</small></a></h3>
+</div>
+
+<p class="center">(<i>For Carl Van Vechten</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap">I CANNOT hold my peace, John Keats;</p></div>
+<div class="dcindent2">There never was a spring like this;</div>
+<div class="verse">It is an echo, that repeats</div>
+<div class="verse">My last year’s song and next year’s bliss.</div>
+<div class="verse">I know, in spite of all men say</div>
+<div class="verse">Of Beauty, you have felt her most.</div>
+<div class="verse">Yea, even in your grave her way</div>
+<div class="verse">Is laid. Poor, troubled, lyric ghost,</div>
+<div class="verse">Spring never was so fair and dear</div>
+<div class="verse">As Beauty makes her seem this year.</div>
+</div>
+<div class="stanza">
+<div class="verse">I cannot hold my peace, John Keats,</div>
+<div class="verse">I am as helpless in the toil</div>
+<div class="verse">Of Spring as any lamb that bleats</div>
+<div class="verse">To feel the solid earth recoil</div>
+<div class="verse">Beneath his puny legs. Spring beats</div>
+<div class="verse">Her tocsin call to those who love her,</div>
+<div class="verse">And lo! the dogwood petals cover</div>
+<span class="pagenum" id="Page_103">[103]</span>
+<div class="verse">Her breast with drifts of snow, and sleek</div>
+<div class="verse">White gulls fly screaming to her, and hover</div>
+<div class="verse">About her shoulders, and kiss her cheek,</div>
+<div class="verse">While white and purple lilacs muster</div>
+<div class="verse">A strength that bears them to a cluster</div>
+<div class="verse">Of color and odor; for her sake</div>
+<div class="verse">All things that slept are now awake.</div>
+</div>
+<div class="stanza">
+<div class="verse">And you and I, shall we lie still,</div>
+<div class="verse">John Keats, while Beauty summons us?</div>
+<div class="verse">Somehow I feel your sensitive will</div>
+<div class="verse">Is pulsing up some tremulous</div>
+<div class="verse">Sap road of a maple tree, whose leaves</div>
+<div class="verse">Grow music as they grow, since your</div>
+<div class="verse">Wild voice is in them, a harp that grieves</div>
+<div class="verse">For life that opens death’s dark door.</div>
+<div class="verse">Though dust, your fingers still can push</div>
+<div class="verse">The Vision Splendid to a birth,</div>
+<div class="verse">Though now they work as grass in the hush</div>
+<div class="verse">Of the night on the broad sweet page of the earth.</div>
+</div>
+<div class="stanza">
+<div class="verse">“John Keats is dead,” they say, but I</div>
+<div class="verse">Who hear your full insistent cry</div>
+<div class="verse">In bud and blossom, leaf and tree,</div>
+<div class="verse">Know John Keats still writes poetry.</div><span class="pagenum" id="Page_104">[104]</span>
+<div class="verse">And while my head is earthward bowed</div>
+<div class="verse">To read new life sprung from your shroud,</div>
+<div class="verse">Folks seeing me must think it strange</div>
+<div class="verse">That merely spring should so derange</div>
+<div class="verse">My mind. They do not know that you,</div>
+<div class="verse">John Keats, keep revel with me, too.</div>
+</div></div></div>
+
+<div class="footnote">
+
+<p><a id="Footnote_1" href="#FNanchor_1" class="label">[A]</a> Spring, 1924</p>
+
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_105">[105]</span>
+<h3 class="nobreak" id="On_Going"><i>On Going</i></h3>
+</div>
+
+<p class="center">(<i>For Willard Johnson</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">A GRAVE is all too weak a thing</p></div>
+<div class="dcindent">To hold my fancy long;</div>
+<div class="verse">I’ll bear a blossom with the spring,</div>
+<div class="indent">Or be a blackbird’s song,</div>
+</div>
+<div class="stanza">
+<div class="verse">I think that I shall fade with ease,</div>
+<div class="indent">Melt into earth like snow,</div>
+<div class="verse">Be food for hungry, growing trees,</div>
+<div class="indent">Or help the lilies blow.</div>
+</div>
+<div class="stanza">
+<div class="verse">And if my love should lonely walk,</div>
+<div class="indent">Quite of my nearness fain,</div>
+<div class="verse">I may come back to her, and talk</div>
+<div class="indent">In liquid words of rain.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_106">[106]</span>
+
+<h3 class="nobreak"><i>Harsh World That
+Lashest Me</i></h3>
+</div>
+
+<p class="center">(<i>For Walter White</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="stanza">
+<div class="verse"><p class="drop-cap3">HARSH World that lashest me each day,</p></div>
+<div class="dcindent">Dub me not cowardly because</div>
+<div class="verse">I seem to find no sudden way</div>
+<div class="indent">To throttle you or clip your claws.</div>
+<div class="verse">No force compels me to the wound</div>
+<div class="indent">Whereof my body bears the scar;</div>
+<div class="verse">Although my feet are on the ground,</div>
+<div class="indent">Doubt not my eyes are on a star.</div>
+</div>
+<div class="stanza">
+<div class="verse">You cannot keep me captive, World,</div>
+<div class="indent">Entrammeled, chained, spit on, and spurned.</div>
+<div class="verse">More free than all your flags unfurled,</div>
+<div class="indent">I give my body to be burned.</div>
+<div class="verse">I mount my cross because I will,</div>
+<div class="indent">I drink the hemlock which you give</div>
+<div class="verse">For wine which you withhold—and still,</div>
+<div class="indent">Because I will not die, I live.</div>
+</div>
+<div class="stanza"><span class="pagenum" id="Page_107">[107]</span>
+<div class="verse">I live because an ember in</div>
+<div class="indent">Me smoulders to regain its fire,</div>
+<div class="verse">Because what is and what has been</div>
+<div class="indent">Not yet have conquered my desire.</div>
+<div class="verse">I live to prove the groping clod</div>
+<div class="indent">Is surely more than simple dust;</div>
+<div class="verse">I live to see the breath of God</div>
+<div class="indent">Beatify the carnal crust.</div>
+</div>
+<div class="stanza">
+<div class="verse">But when I will, World, I can go,</div>
+<div class="indent">Though triple bronze should wall me round,</div>
+<div class="verse">Slip past your guard as swift as snow,</div>
+<div class="indent">Translated without pain or sound.</div>
+<div class="verse">Within myself is lodged the key</div>
+<div class="indent">To that vast room of couches laid</div>
+<div class="verse">For those too proud to live and see</div>
+<div class="indent">Their dreams of light eclipsed in shade.</div>
+</div></div></div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_108">[108]</span>
+
+<h3 class="nobreak"><i>Requiescam</i></h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+<div class="verse"><p class="drop-cap"><i>I AM for sleeping and forgetting</i></p></div>
+<div class="indent"><i>All that has gone before;</i></div>
+<div class="verse"><i>I am for lying still and letting</i></div>
+<div class="indent"><i>Who will beat at my door;</i></div>
+<div class="verse"><i>I would my life’s cold sun were setting</i></div>
+<div class="indent"><i>To rise for me no more.</i></div>
+</div></div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<div class="transnote">
+
+<p class="ph1">TRANSCRIBER’S NOTE:</p>
+
+<p>An incorrect page number in the Table of Contents has been corrected.</p>
+</div></div>
+
+<div style='display:block; margin-top:4em'>*** END OF THE PROJECT GUTENBERG EBOOK COLOR ***</div>
+<div style='text-align:left'>
+
+<div style='display:block; margin:1em 0'>
+Updated editions will replace the previous one&#8212;the old editions will
+be renamed.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Creating the works from print editions not protected by U.S. copyright
+law means that no one owns a United States copyright in these works,
+so the Foundation (and you!) can copy and distribute it in the United
+States without permission and without paying copyright
+royalties. Special rules, set forth in the General Terms of Use part
+of this license, apply to copying and distributing Project
+Gutenberg&#8482; electronic works to protect the PROJECT GUTENBERG&#8482;
+concept and trademark. Project Gutenberg is a registered trademark,
+and may not be used if you charge for an eBook, except by following
+the terms of the trademark license, including paying royalties for use
+of the Project Gutenberg trademark. If you do not charge anything for
+copies of this eBook, complying with the trademark license is very
+easy. You may use this eBook for nearly any purpose such as creation
+of derivative works, reports, performances and research. Project
+Gutenberg eBooks may be modified and printed and given away&#8212;you may
+do practically ANYTHING in the United States with eBooks not protected
+by U.S. copyright law. Redistribution is subject to the trademark
+license, especially commercial redistribution.
+</div>
+
+<div style='margin-top:1em; font-size:1.1em; text-align:center'>START: FULL LICENSE</div>
+<div style='text-align:center;font-size:0.9em'>THE FULL PROJECT GUTENBERG LICENSE</div>
+<div style='text-align:center;font-size:0.9em'>PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK</div>
+
+<div style='display:block; margin:1em 0'>
+To protect the Project Gutenberg&#8482; mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase &#8220;Project
+Gutenberg&#8221;), you agree to comply with all the terms of the Full
+Project Gutenberg&#8482; License available with this file or online at
+www.gutenberg.org/license.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 1. General Terms of Use and Redistributing Project Gutenberg&#8482; electronic works
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.A. By reading or using any part of this Project Gutenberg&#8482;
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement. If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or
+destroy all copies of Project Gutenberg&#8482; electronic works in your
+possession. If you paid a fee for obtaining a copy of or access to a
+Project Gutenberg&#8482; electronic work and you do not agree to be bound
+by the terms of this agreement, you may obtain a refund from the person
+or entity to whom you paid the fee as set forth in paragraph 1.E.8.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.B. &#8220;Project Gutenberg&#8221; is a registered trademark. It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement. There are a few
+things that you can do with most Project Gutenberg&#8482; electronic works
+even without complying with the full terms of this agreement. See
+paragraph 1.C below. There are a lot of things you can do with Project
+Gutenberg&#8482; electronic works if you follow the terms of this
+agreement and help preserve free future access to Project Gutenberg&#8482;
+electronic works. See paragraph 1.E below.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.C. The Project Gutenberg Literary Archive Foundation (&#8220;the
+Foundation&#8221; or PGLAF), owns a compilation copyright in the collection
+of Project Gutenberg&#8482; electronic works. Nearly all the individual
+works in the collection are in the public domain in the United
+States. If an individual work is unprotected by copyright law in the
+United States and you are located in the United States, we do not
+claim a right to prevent you from copying, distributing, performing,
+displaying or creating derivative works based on the work as long as
+all references to Project Gutenberg are removed. Of course, we hope
+that you will support the Project Gutenberg&#8482; mission of promoting
+free access to electronic works by freely sharing Project Gutenberg&#8482;
+works in compliance with the terms of this agreement for keeping the
+Project Gutenberg&#8482; name associated with the work. You can easily
+comply with the terms of this agreement by keeping this work in the
+same format with its attached full Project Gutenberg&#8482; License when
+you share it without charge with others.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.D. The copyright laws of the place where you are located also govern
+what you can do with this work. Copyright laws in most countries are
+in a constant state of change. If you are outside the United States,
+check the laws of your country in addition to the terms of this
+agreement before downloading, copying, displaying, performing,
+distributing or creating derivative works based on this work or any
+other Project Gutenberg&#8482; work. The Foundation makes no
+representations concerning the copyright status of any work in any
+country other than the United States.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E. Unless you have removed all references to Project Gutenberg:
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.1. The following sentence, with active links to, or other
+immediate access to, the full Project Gutenberg&#8482; License must appear
+prominently whenever any copy of a Project Gutenberg&#8482; work (any work
+on which the phrase &#8220;Project Gutenberg&#8221; appears, or with which the
+phrase &#8220;Project Gutenberg&#8221; is associated) is accessed, displayed,
+performed, viewed, copied or distributed:
+</div>
+
+<blockquote>
+  <div style='display:block; margin:1em 0'>
+    This eBook is for the use of anyone anywhere in the United States and most
+    other parts of the world at no cost and with almost no restrictions
+    whatsoever. You may copy it, give it away or re-use it under the terms
+    of the Project Gutenberg License included with this eBook or online
+    at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+    are not located in the United States, you will have to check the laws
+    of the country where you are located before using this eBook.
+  </div>
+</blockquote>
+
+<div style='display:block; margin:1em 0'>
+1.E.2. If an individual Project Gutenberg&#8482; electronic work is
+derived from texts not protected by U.S. copyright law (does not
+contain a notice indicating that it is posted with permission of the
+copyright holder), the work can be copied and distributed to anyone in
+the United States without paying any fees or charges. If you are
+redistributing or providing access to a work with the phrase &#8220;Project
+Gutenberg&#8221; associated with or appearing on the work, you must comply
+either with the requirements of paragraphs 1.E.1 through 1.E.7 or
+obtain permission for the use of the work and the Project Gutenberg&#8482;
+trademark as set forth in paragraphs 1.E.8 or 1.E.9.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.3. If an individual Project Gutenberg&#8482; electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any
+additional terms imposed by the copyright holder. Additional terms
+will be linked to the Project Gutenberg&#8482; License for all works
+posted with the permission of the copyright holder found at the
+beginning of this work.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.4. Do not unlink or detach or remove the full Project Gutenberg&#8482;
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg&#8482;.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.5. Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg&#8482; License.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.6. You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including
+any word processing or hypertext form. However, if you provide access
+to or distribute copies of a Project Gutenberg&#8482; work in a format
+other than &#8220;Plain Vanilla ASCII&#8221; or other format used in the official
+version posted on the official Project Gutenberg&#8482; website
+(www.gutenberg.org), you must, at no additional cost, fee or expense
+to the user, provide a copy, a means of exporting a copy, or a means
+of obtaining a copy upon request, of the work in its original &#8220;Plain
+Vanilla ASCII&#8221; or other form. Any alternate format must include the
+full Project Gutenberg&#8482; License as specified in paragraph 1.E.1.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.7. Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg&#8482; works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.8. You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg&#8482; electronic works
+provided that:
+</div>
+
+<div style='margin-left:0.7em;'>
+    <div style='text-indent:-0.7em'>
+        &#8226; You pay a royalty fee of 20% of the gross profits you derive from
+        the use of Project Gutenberg&#8482; works calculated using the method
+        you already use to calculate your applicable taxes. The fee is owed
+        to the owner of the Project Gutenberg&#8482; trademark, but he has
+        agreed to donate royalties under this paragraph to the Project
+        Gutenberg Literary Archive Foundation. Royalty payments must be paid
+        within 60 days following each date on which you prepare (or are
+        legally required to prepare) your periodic tax returns. Royalty
+        payments should be clearly marked as such and sent to the Project
+        Gutenberg Literary Archive Foundation at the address specified in
+        Section 4, &#8220;Information about donations to the Project Gutenberg
+        Literary Archive Foundation.&#8221;
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You provide a full refund of any money paid by a user who notifies
+        you in writing (or by e-mail) within 30 days of receipt that s/he
+        does not agree to the terms of the full Project Gutenberg&#8482;
+        License. You must require such a user to return or destroy all
+        copies of the works possessed in a physical medium and discontinue
+        all use of and all access to other copies of Project Gutenberg&#8482;
+        works.
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You provide, in accordance with paragraph 1.F.3, a full refund of
+        any money paid for a work or a replacement copy, if a defect in the
+        electronic work is discovered and reported to you within 90 days of
+        receipt of the work.
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You comply with all other terms of this agreement for free
+        distribution of Project Gutenberg&#8482; works.
+    </div>
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.9. If you wish to charge a fee or distribute a Project
+Gutenberg&#8482; electronic work or group of works on different terms than
+are set forth in this agreement, you must obtain permission in writing
+from the Project Gutenberg Literary Archive Foundation, the manager of
+the Project Gutenberg&#8482; trademark. Contact the Foundation as set
+forth in Section 3 below.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.1. Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+works not protected by U.S. copyright law in creating the Project
+Gutenberg&#8482; collection. Despite these efforts, Project Gutenberg&#8482;
+electronic works, and the medium on which they may be stored, may
+contain &#8220;Defects,&#8221; such as, but not limited to, incomplete, inaccurate
+or corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged disk or
+other medium, a computer virus, or computer codes that damage or
+cannot be read by your equipment.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the &#8220;Right
+of Replacement or Refund&#8221; described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg&#8482; trademark, and any other party distributing a Project
+Gutenberg&#8482; electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from. If you
+received the work on a physical medium, you must return the medium
+with your written explanation. The person or entity that provided you
+with the defective work may elect to provide a replacement copy in
+lieu of a refund. If you received the work electronically, the person
+or entity providing it to you may choose to give you a second
+opportunity to receive the work electronically in lieu of a refund. If
+the second copy is also defective, you may demand a refund in writing
+without further opportunities to fix the problem.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.4. Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you &#8216;AS-IS&#8217;, WITH NO
+OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.5. Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of
+damages. If any disclaimer or limitation set forth in this agreement
+violates the law of the state applicable to this agreement, the
+agreement shall be interpreted to make the maximum disclaimer or
+limitation permitted by the applicable state law. The invalidity or
+unenforceability of any provision of this agreement shall not void the
+remaining provisions.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg&#8482; electronic works in
+accordance with this agreement, and any volunteers associated with the
+production, promotion and distribution of Project Gutenberg&#8482;
+electronic works, harmless from all liability, costs and expenses,
+including legal fees, that arise directly or indirectly from any of
+the following which you do or cause to occur: (a) distribution of this
+or any Project Gutenberg&#8482; work, (b) alteration, modification, or
+additions or deletions to any Project Gutenberg&#8482; work, and (c) any
+Defect you cause.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 2. Information about the Mission of Project Gutenberg&#8482;
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of
+computers including obsolete, old, middle-aged and new computers. It
+exists because of the efforts of hundreds of volunteers and donations
+from people in all walks of life.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg&#8482;&#8217;s
+goals and ensuring that the Project Gutenberg&#8482; collection will
+remain freely available for generations to come. In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg&#8482; and future
+generations. To learn more about the Project Gutenberg Literary
+Archive Foundation and how your efforts and donations can help, see
+Sections 3 and 4 and the Foundation information page at www.gutenberg.org.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 3. Information about the Project Gutenberg Literary Archive Foundation
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Project Gutenberg Literary Archive Foundation is a non-profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service. The Foundation&#8217;s EIN or federal tax identification
+number is 64-6221541. Contributions to the Project Gutenberg Literary
+Archive Foundation are tax deductible to the full extent permitted by
+U.S. federal laws and your state&#8217;s laws.
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Foundation&#8217;s business office is located at 809 North 1500 West,
+Salt Lake City, UT 84116, (801) 596-1887. Email contact links and up
+to date contact information can be found at the Foundation&#8217;s website
+and official page at www.gutenberg.org/contact
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 4. Information about Donations to the Project Gutenberg Literary Archive Foundation
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; depends upon and cannot survive without widespread
+public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine-readable form accessible by the widest
+array of equipment including outdated equipment. Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States. Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements. We do not solicit donations in locations
+where we have not received written confirmation of compliance. To SEND
+DONATIONS or determine the status of compliance for any particular state
+visit <a href="https://www.gutenberg.org/donate/">www.gutenberg.org/donate</a>.
+</div>
+
+<div style='display:block; margin:1em 0'>
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+</div>
+
+<div style='display:block; margin:1em 0'>
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States. U.S. laws alone swamp our small staff.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Please check the Project Gutenberg web pages for current donation
+methods and addresses. Donations are accepted in a number of other
+ways including checks, online payments and credit card donations. To
+donate, please visit: www.gutenberg.org/donate
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 5. General Information About Project Gutenberg&#8482; electronic works
+</div>
+
+<div style='display:block; margin:1em 0'>
+Professor Michael S. Hart was the originator of the Project
+Gutenberg&#8482; concept of a library of electronic works that could be
+freely shared with anyone. For forty years, he produced and
+distributed Project Gutenberg&#8482; eBooks with only a loose network of
+volunteer support.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; eBooks are often created from several printed
+editions, all of which are confirmed as not protected by copyright in
+the U.S. unless a copyright notice is included. Thus, we do not
+necessarily keep eBooks in compliance with any particular paper
+edition.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Most people start at our website which has the main PG search
+facility: <a href="https://www.gutenberg.org">www.gutenberg.org</a>.
+</div>
+
+<div style='display:block; margin:1em 0'>
+This website includes information about Project Gutenberg&#8482;,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
+</div>
+
+</div>
+</body>
+</html>
